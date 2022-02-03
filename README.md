@@ -1,4 +1,4 @@
-# Adict Test Task
+# Kvadrat Landing
 
 ## Available Scripts
 

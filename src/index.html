@@ -18,8 +18,6 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
-
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -92,7 +90,7 @@
 			</div>
 		</header>
 		<main>
-			<div class="swiper">
+			<div class="swiper first-swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide" id="first-slider-slide-1">
 						<h2 class="slide-text">РОССИЙСКИЙ НЕЗАВИСИМЫЙ ПОСТАВЩИК для ОПК</h2>
@@ -171,6 +169,38 @@
 					<img src="./img/main/about/photo.png" alt="">
 				</div>
 			</div>
+			<div class="gallery-container">
+				<div class="block-title-container">
+					<span class="block-title-number">2</span>
+					<hr class="block-title-hr">
+					<span class="block-title">Галерея</span>
+				</div>
+				<div class="swiper second-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" id="second-slider-slide-1">
+							<p>Наше производство позволяет развивать лучшие продукты для эффективного решения задач</p>
+						</div>
+						<div class="swiper-slide" id="second-slider-slide-2">
+							<p>Наше производство позволяет развивать лучшие продукты для эффективного решения задач</p>
+						</div>
+						<div class="swiper-slide" id="second-slider-slide-3">
+							<p>Наше производство позволяет развивать лучшие продукты для эффективного решения задач</p>
+						</div>
+						<div class="swiper-slide" id="second-slider-slide-4">
+							<p>Наше производство позволяет развивать лучшие продукты для эффективного решения задач</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide-pagination-container second-slider-pagination-container">
+					<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="secondSliderGoBack()">
+					<div class="slider-progress-container">
+						<hr class="slider-progress-bar" id="second-slider-progress-bar" />
+						<span class="slider-progress-text second-slider-progress-text">1/4</span>
+					</div>
+					<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="secondSliderGoNext()">
+				</div>
+			</div>
+			
 		</main>
 		<footer>
 			
