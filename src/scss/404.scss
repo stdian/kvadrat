@@ -1,0 +1,45 @@
+@import "global";
+@import "header";
+@import "footer";
+
+main {
+	.not-found-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 1240px;
+		margin: 0 auto;
+		padding: 73px 60px 102px;
+
+		.left {
+			float: left;
+
+			h2 {
+				padding-bottom: 24px;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 40px;
+				line-height: 130%;
+				color: #000000;
+			}
+
+			p {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 160%;
+				color: #000000;
+				white-space: pre-line;
+
+				a {
+					color: #FF0000;
+					text-decoration: none;
+
+					&:visited, &hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

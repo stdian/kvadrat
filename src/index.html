@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="ya-title=#FFFFFF,ya-dock=fade" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="light" />
+		<meta name="msapplication-navbutton-color" content="#FFFFFF" />
+		<title>Главная | Квадрат</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/pt-root-ui" rel="stylesheet">
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="top-bar-container">
+				<div class="top-bar">
+					<div class="top-bar-container-left">
+						<span class="infotext">Партнерам</span>
+						<span class="infotext">Поставщикам</span>
+						<span class="infotext">Поддержка</span>
+					</div>
+					<div class="top-bar-container-right">
+						<div class="address-container">
+							<img src="./img/header/map-icon.svg" alt="">
+							<span class="infotext">Санкт-Петербург</span>
+						</div>
+						<span class="phone">+7 (927) 698-36-48</span>
+						<span class="infotext">11:00 – 22:00</span>
+						<div class="messengers-container">
+							<img src="./img/header/telegram.svg" alt="">
+							<img src="./img/header/wa.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-container">
+				<div class="header">
+					<div class="logo-container">
+						<img src="./img/header/logo.svg" alt="">
+						<div class="logo-text-container">
+							<span class="logo-text-main">КВАДРАТ</span>
+							<span class="logo-text-red">СГ</span>
+							<br />
+							<span class="logo-text-down">Комплектующие для ОПК</span>
+						</div>
+					</div>
+					<ul class="header-menu-container">
+						<li class="header-menu-item"><a href="/company">Компания</a></li>
+						<li class="header-menu-item">Продукция</li>
+						<li class="header-menu-item">Контрагенты</li>
+						<li class="header-menu-item">Пресс-центр</li>
+						<li class="header-menu-item">Контакты</li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-header-container">
+				<div class="search-header">
+					<div class="catalog-button-container">
+						<img src="./img/header/menuicon.svg" alt="">
+						<span class="catalog-buton-text">Каталог продукции</span>
+					</div>
+					<div class="search-container">
+						<input class="search-input" />
+						<img src="./img/header/searchbtn.svg" alt="">
+					</div>
+					<div class="buttons-container">
+						<div class="button-container">
+							<img src="./img/header/profile.svg" alt="">
+							<span class="button-text">Профиль</span>
+						</div>
+						<div class="button-container">
+							<img src="./img/header/clockicon.svg" alt="">
+							<span class="button-text">Отложенные</span>
+						</div>
+						<div class="button-container">
+							<img src="./img/header/carticon.svg" alt="">
+							<span class="button-text">Корзина</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" id="first-slider-slide-1">
+						<h2 class="slide-text">РОССИЙСКИЙ НЕЗАВИСИМЫЙ ПОСТАВЩИК для ОПК</h2>
+						<div class="slide-bottom-container">
+							<button class="btn btn-white">Сферы применения</button>
+							<div class="slide-pagination-container">
+								<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="firstSliderGoBack()">
+								<div class="slider-progress-container">
+									<hr class="slider-progress-bar" />
+									<span class="slider-progress-text">1/4</span>
+								</div>
+								<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="firstSliderGoNext()">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" id="first-slider-slide-1">
+						<h2 class="slide-text">РОССИЙСКИЙ НЕЗАВИСИМЫЙ ПОСТАВЩИК для ОПК</h2>
+						<div class="slide-bottom-container">
+							<button class="btn btn-white">Сферы применения</button>
+							<div class="slide-pagination-container">
+								<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="firstSliderGoBack()">
+								<div class="slider-progress-container">
+									<hr class="slider-progress-bar" />
+									<span class="slider-progress-text">2/4</span>
+								</div>
+								<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="firstSliderGoNext()">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" id="first-slider-slide-1">
+						<h2 class="slide-text">РОССИЙСКИЙ НЕЗАВИСИМЫЙ ПОСТАВЩИК для ОПК</h2>
+						<div class="slide-bottom-container">
+							<button class="btn btn-white">Сферы применения</button>
+							<div class="slide-pagination-container">
+								<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="firstSliderGoBack()">
+								<div class="slider-progress-container">
+									<hr class="slider-progress-bar" />
+									<span class="slider-progress-text">3/4</span>
+								</div>
+								<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="firstSliderGoNext()">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" id="first-slider-slide-1">
+						<h2 class="slide-text">РОССИЙСКИЙ НЕЗАВИСИМЫЙ ПОСТАВЩИК для ОПК</h2>
+						<div class="slide-bottom-container">
+							<button class="btn btn-white">Сферы применения</button>
+							<div class="slide-pagination-container">
+								<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="firstSliderGoBack()">
+								<div class="slider-progress-container">
+									<hr class="slider-progress-bar" />
+									<span class="slider-progress-text">4/4</span>
+								</div>
+								<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="firstSliderGoNext()">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="about-container">
+				<div class="block-title-container">
+					<span class="block-title-number">1</span>
+					<hr class="block-title-hr">
+					<span class="block-title">Компания</span>
+				</div>
+				<div class="left-container">
+					<h2>Мы предлагаем возможность максимального раскрытия потенциала благодаря корпоративной рабочей среде КВАДРАТ СГ, которая позволяет развивать и мотивировать лучших людей для эффективного решения задач нашего бизнеса и достижения личных целей.</h2>
+					<div class="text-container">
+						<img src="./img/main/about/marker.svg" alt="">
+						<p class="text-with-marker">Мы связываем интересы компании и интересы каждого сотрудника. Наша система вознаграждений тесно связана с эффективностью работы компании, рыночными, а также индивидуальными результатами и реализуется в полном соответствии с требованиями законодательства. Корпоративные инициативы КВАДРАТ СГ, связанные с охраной здоровья, включают в себя медицинское страхование сотрудников и поддержку занятий спортом</p>
+					</div>
+					<button class="btn btn-black">Подробнее о компании</button>
+				</div>
+				<div class="right-container">
+					<img src="./img/main/about/photo.png" alt="">
+				</div>
+			</div>
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
