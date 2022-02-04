@@ -33,7 +33,7 @@ const secondSwiper = new Swiper(".second-swiper", {
 		stretch: 100, // Stretch space between slides (in px)
 		depth: 300, // Depth offset in px (slides translate in Z axis)
 		modifier: 1, // Effect multipler
-		slideShadows: false, // Enables slides shadows
+		slideShadows: true, // Enables slides shadows
 	},
 	pagination: {
 		el: ".second-slider-progress-text",

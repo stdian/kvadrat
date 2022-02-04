@@ -269,4 +269,149 @@ main {
 			}
 		}
 	}
+
+	.competence-container {
+		min-height: 1072px;
+		background: #F4F4F4;
+
+		.competence {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 50px;
+			padding: 0 60px;
+
+			.left {
+				width: 544px;
+				background: #FF0000;
+				box-shadow: 0px 4px 40px rgba(0, 0, 0, .08);
+
+				h4 {
+					padding: 45px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 32px;
+					line-height: 130%;
+					color: #FFFFFF;
+				}
+			}
+	
+			.right {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 32px;
+				column-gap: 32px;
+
+				.item {
+					position: relative;
+					min-width: 256px;
+					min-height: 256px;
+
+					background: #FFFFFF;
+					box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
+
+					img {
+						&:nth-child(1) {
+							margin-top: 22px;
+							margin-left: 28px;
+						}
+
+						&:nth-child(2) {
+							margin-top: 24px;
+							margin-left: 23px;
+						}
+
+						&:nth-child(3) {
+							margin-top: 21px;
+							margin-left: 23px;
+						}
+
+						&:nth-child(4) {
+							margin-top: 26px;
+							margin-left: 24px;
+						}
+					}
+
+					p {
+						position: absolute;
+						bottom: 20px;
+						left: 27px;
+
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 160%;
+						color: #000000;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		
+		.btn-container {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 83px;
+		}
+	}
+
+	.products-container {
+		min-height: 1034px;
+
+		.items {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 32px;
+			margin-top: 68px;
+			padding: 0 60px;
+			column-gap: 32px;
+
+			.item {
+				position: relative;
+				display: flex;
+				width: 544px;
+				min-height: 232px;
+				background: #F2F2F2;
+
+				.item-name {
+					padding-top: 27px;
+					padding-left: 24px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 130%;
+					color: #000000;
+				}
+
+				.item-char {
+					position: absolute;
+					bottom: 24px;
+					margin-left: 24px;
+
+					.info-string {
+						display: flex;
+						justify-content: space-between;
+						width: 265px;
+						margin-top: 11px;
+						border-bottom: 1px solid #C9C9C9;
+
+						p {
+							font-style: normal;
+							font-weight: normal;
+							font-size: 13px;
+							line-height: 160%;
+							color: #000000;
+						}
+					}
+				}
+			}
+		}
+
+		.btn-container {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 83px;
+		}
+	}
 }
