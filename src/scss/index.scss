@@ -414,4 +414,119 @@ main {
 			margin-top: 83px;
 		}
 	}
+
+	.advantages-container {
+		min-height: 1088px;
+		background: url("../img/main/advantages/bg.png");
+		.block-title {
+			color: #FFFFFF;
+		}
+
+		.advantages {
+			position: relative;
+			padding: 0 60px;
+
+			.container {  
+				display: grid;
+				grid-template-columns: 1fr 8px 1fr;
+				grid-template-rows: 1fr 8px 1fr;
+				gap: 0px 0px;
+				grid-auto-flow: row;
+				grid-template-areas:
+				  "text1 line1 text2"
+				  "line2 dot line3"
+				  "text3 line4 text4";
+				margin-top: 57px;
+
+				.text1 {
+					padding: 20px 98px 80px 101px;
+					grid-area: text1;
+				}
+	
+				.line1 {
+					display: flex;
+					justify-content: flex-start;
+					flex-direction: column;
+					grid-area: line1;
+					align-items: center;
+				}
+				
+				.text2 {
+					padding: 20px 85px 80px 114px;
+					grid-area: text2; 
+				}
+				
+				.text3 {
+					padding: 75px 98px 40px 101px;
+					grid-area: text3;
+				}
+				
+				.line2 {
+					display: flex;
+					justify-content: flex-start;
+					grid-area: line2;
+					align-items: center;
+				}
+				
+				.dot {
+					grid-area: dot;
+				}
+				
+				.line3 {
+					display: flex;
+					justify-content: flex-end;
+					grid-area: line3;
+					align-items: center;
+				}
+				
+				.line4 {
+					display: flex;
+					justify-content: flex-end;
+					flex-direction: column;
+					grid-area: line4;
+					align-items: center;
+				}
+				
+				.text4 {
+					padding: 75px 85px 40px 114px;
+					grid-area: text4;
+				}
+	
+				#horizontal1, #horizontal2 {
+					width: 448px;
+					height: 4px;
+				}
+	
+	
+				#vertical1, #vertical2 {
+					width: 4px;
+					height: 280px;
+				}
+	
+				.dot {
+					width: 8px;
+					height: 8px;
+					background-color: #FF0000;
+				}
+	
+				.text-header {
+					padding-bottom: 22px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 25px;
+					line-height: 130%;
+					color: #FFFFFF;
+				}
+	
+				.text {
+					width: 363px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 160%;
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
 }
