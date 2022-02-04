@@ -428,44 +428,41 @@ main {
 
 			.container {  
 				display: grid;
-				grid-template-columns: 1fr 8px 1fr;
+				grid-template-areas: "text1 line1 text2" "line2 dot line3" "text3 line4 text4";
 				grid-template-rows: 1fr 8px 1fr;
-				gap: 0px 0px;
+				grid-template-columns: 1fr 8px 1fr;
 				grid-auto-flow: row;
-				grid-template-areas:
-				  "text1 line1 text2"
-				  "line2 dot line3"
-				  "text3 line4 text4";
+				gap: 0px 0px;
 				margin-top: 57px;
 
 				.text1 {
-					padding: 20px 98px 80px 101px;
 					grid-area: text1;
+					padding: 20px 98px 80px 101px;
 				}
 	
 				.line1 {
 					display: flex;
-					justify-content: flex-start;
 					flex-direction: column;
 					grid-area: line1;
 					align-items: center;
+					justify-content: flex-start;
 				}
 				
 				.text2 {
-					padding: 20px 85px 80px 114px;
 					grid-area: text2; 
+					padding: 20px 85px 80px 114px;
 				}
 				
 				.text3 {
-					padding: 75px 98px 40px 101px;
 					grid-area: text3;
+					padding: 75px 98px 40px 101px;
 				}
 				
 				.line2 {
 					display: flex;
-					justify-content: flex-start;
 					grid-area: line2;
 					align-items: center;
+					justify-content: flex-start;
 				}
 				
 				.dot {
@@ -474,22 +471,22 @@ main {
 				
 				.line3 {
 					display: flex;
-					justify-content: flex-end;
 					grid-area: line3;
 					align-items: center;
+					justify-content: flex-end;
 				}
 				
 				.line4 {
 					display: flex;
-					justify-content: flex-end;
 					flex-direction: column;
 					grid-area: line4;
 					align-items: center;
+					justify-content: flex-end;
 				}
 				
 				.text4 {
-					padding: 75px 85px 40px 114px;
 					grid-area: text4;
+					padding: 75px 85px 40px 114px;
 				}
 	
 				#horizontal1, #horizontal2 {
@@ -525,6 +522,97 @@ main {
 					font-size: 18px;
 					line-height: 160%;
 					color: #FFFFFF;
+				}
+			}
+		}
+	}
+
+	.contractors-container {
+		min-height: 910px;
+		background: #F4F4F4;
+
+		.first-line {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 55px;
+			padding: 0 60px 0 162px;
+
+			.left {
+				p {
+					width: 406px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 160%;
+					color: #000000;
+					text-transform: uppercase;
+				}
+			}
+
+			.right {
+				display: flex;
+				justify-content: space-between;
+				width: 544px;
+				margin-top: 9px;
+				
+			}
+		}
+
+		.contractor {
+			width: 160px;
+
+			.contractor-image {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 160px;
+				height: 160px;
+				background: #FFFFFF;
+				box-shadow: 0px 16px 64px rgba(0, 0, 0, .04);
+			}
+
+			.contractor-name {
+				padding-top: 21px;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 160%;
+				color: #000000;
+			}
+		}
+
+		.second-line {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 47px;
+			padding: 0 60px;
+
+			.left {
+				display: flex;
+				justify-content: space-between;
+				width: 736px;
+			}
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				margin-top: 133px;
+				
+				#line1 {
+					width: 45px;
+					height: 6px;
+					margin-bottom: 14px;
+					border: 0;
+					background: #FF0000;
+				}
+
+				#line2 {
+					width: 87px;
+					height: 6px;
+					border: 0;
+					background: #FF0000;
 				}
 			}
 		}
