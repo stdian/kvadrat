@@ -18,6 +18,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -427,9 +428,79 @@
 					</div>
 				</div>
 			</section>
+			<section class="press-container">
+				<div class="block-title-container">
+					<span class="block-title-number">6</span>
+					<hr class="block-title-hr">
+					<h1 class="block-title">ПРЕСС-ЦЕНТР</h1>
+				</div>
+				<div class="third-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="press-article">
+								<img src="./img/press/press1.png" alt="" class="press-article-image">
+								<p class="press-article-date">05.07.22</p>
+								<p class="press-article-text">Повышать эффективность процессов производства, вовлекая персонал в деятельность по улучшению качества посредством эффективной системы мотивации</p>
+								<img src="./img/press/pressarrow.svg" alt="" class="press-article-arrow">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="press-article">
+								<img src="./img/press/press2.png" alt="" class="press-article-image">
+								<p class="press-article-date">05.07.22</p>
+								<p class="press-article-text">Удовлетворять потребности наших клиентов, производя качественную продукцию и разрабатывая новую</p>
+								<img src="./img/press/pressarrow.svg" alt="" class="press-article-arrow">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="press-article">
+								<img src="./img/press/press3.png" alt="" class="press-article-image">
+								<p class="press-article-date">05.07.22</p>
+								<p class="press-article-text">Наши специалисты регулярно повышают квалификацию при конструировании и изготовлении оборудования, систем и комплексов</p>
+								<img src="./img/press/pressarrow.svg" alt="" class="press-article-arrow">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="press-article">
+								<img src="./img/press/press1.png" alt="" class="press-article-image">
+								<p class="press-article-date">05.07.22</p>
+								<p class="press-article-text">Повышать эффективность процессов производства, вовлекая персонал в деятельность по улучшению качества посредством эффективной системы мотивации</p>
+								<img src="./img/press/pressarrow.svg" alt="" class="press-article-arrow">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide-pagination-container third-slider-pagination-container">
+					<img src="./img/main/firstSlider/goBack.svg" alt="" onClick="thirdSliderGoBack()">
+					<div class="slider-progress-container">
+						<hr class="slider-progress-bar" id="third-slider-progress-bar" />
+						<span class="slider-progress-text third-slider-progress-text">1/4</span>
+					</div>
+					<img src="./img/main/firstSlider/goNext.svg" alt="" onClick="thirdSliderGoNext()">
+				</div>
+			</section>
 		</main>
 		<footer>
-			
+			<div class="footer-container">
+				<div class="footer">
+					<ul class="footer-menu">
+						<li><a href="">Компания</a></li>
+						<li><a href="">Контрагенты</a></li>
+						<li><a href="">Продукция</a></li>
+						<li><a href="">Пресс-центр</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+					<div class="center-container">
+						<button class="btn btn-white">Обратная связь</button>
+						<span class="phone">+7 (812) 327-90-99</span>
+					</div>
+					<div class="address-container">
+						<a href="mailto:info@onegroup.ru" class="email">info@onegroup.ru</a>
+						<p class="address">196006, Санкт-Петербург,<br />ул. Коли Томчака, 9</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>

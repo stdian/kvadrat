@@ -1,7 +1,7 @@
 import "../index.html"
 import "../scss/index.scss"
 
-import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js"
+// import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js"
 
 const swiper = new Swiper(".first-swiper", {
 	// Optional parameters
@@ -53,4 +53,28 @@ window.secondSliderGoNext = () => {
 
 window.secondSliderGoBack = () => {
 	secondSwiper.slidePrev()
+}
+
+const thirdSwiper = new Swiper(".third-swiper", {
+	// Optional parameters
+	loop: false,
+	slidesPerView: 3,
+	pagination: {
+		el: ".third-slider-progress-text",
+		type: "custom",
+		clickable: true,
+		// eslint-disable-next-line object-shorthand
+		renderCustom: function(_swiper, current, total) {
+			document.getElementById("third-slider-progress-bar").style.background = `linear-gradient(to right, #FF0000 ${(current / total) * 100}%, #000000 ${(current / total) * 100}%, #000000 75%, #000000 100%)`
+			return current + "/" + total
+		},
+	},
+})
+
+window.thirdSliderGoNext = () => {
+	thirdSwiper.slideNext()
+}
+
+window.thirdSliderGoBack = () => {
+	thirdSwiper.slidePrev()
 }

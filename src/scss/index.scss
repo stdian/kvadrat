@@ -2,6 +2,7 @@
 @import "footer";
 @import "global";
 
+
 main {
 	width: 1240px;
 	margin: 0 auto;
@@ -123,7 +124,7 @@ main {
 		width: 100%;
 		min-height: 1100px;
 		background: #EAEAEA;
-		background-image: url("../img/main/about/bg.png");
+		background-image: url("../img/main/about/aboutbg.png");
 		background-position: 100% 0;
 		background-repeat: no-repeat;
 
@@ -417,7 +418,7 @@ main {
 
 	.advantages-container {
 		min-height: 1088px;
-		background: url("../img/main/advantages/bg.png");
+		background: url("../img/main/advantages/abg.png");
 		.block-title {
 			color: #FFFFFF;
 		}
@@ -613,6 +614,70 @@ main {
 					height: 6px;
 					border: 0;
 					background: #FF0000;
+				}
+			}
+		}
+	}
+
+	.press-container {
+		min-height: 920px;
+
+		.third-swiper {
+			overflow-x: hidden;
+			margin-top: 66px;
+			
+			.swiper-wrapper {
+				.swiper-slide {
+					position: relative;
+					width: 352px;
+					min-height: 407px;
+
+					.press-article {
+						position: relative;
+						width: 352px;
+						min-height: 407px;
+						border-bottom: 1px solid #D2D2D2;
+
+						.press-article-date {
+							padding-top: 20px;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 14px;
+							line-height: 160%;
+							color: #808080;
+						}
+
+						.press-article-text {
+							padding-top: 9px;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 14px;
+							line-height: 160%;
+							color: #000000;
+						}
+						
+						.press-article-arrow {
+							position: absolute;
+							bottom: 16px;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.third-slider-pagination-container {
+			justify-content: center;
+			margin-top: 60px;
+			
+			.slider-progress-container {
+				#third-slider-progress-bar {
+					background: linear-gradient(to right, #FF0000 25%, #000000 25%, #000000 75%);
+				}
+
+				.third-slider-progress-text {
+					color: #000000;
+					text-align: center;
 				}
 			}
 		}
