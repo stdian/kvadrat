@@ -35,3 +35,50 @@ html, body {
 .btn-black {
 	color: #000000;
 }
+
+.products-items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 32px;
+	column-gap: 32px;
+
+	.item {
+		position: relative;
+		display: flex;
+		width: 544px;
+		min-height: 232px;
+		background: #F2F2F2;
+
+		.item-name {
+			padding-top: 27px;
+			padding-left: 24px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 130%;
+			color: #000000;
+		}
+
+		.item-char {
+			position: absolute;
+			bottom: 24px;
+			margin-left: 24px;
+
+			.info-string {
+				display: flex;
+				justify-content: space-between;
+				width: 265px;
+				margin-top: 11px;
+				border-bottom: 1px solid #C9C9C9;
+
+				p {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 13px;
+					line-height: 160%;
+					color: #000000;
+				}
+			}
+		}
+	}
+}

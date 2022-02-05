@@ -14,11 +14,11 @@ footer {
 
 			.footer-menu {
 				width: 33%;
-				margin-top: 80px;
+				margin-top: 75px;
 				list-style-type: none;
 
 				li {
-					padding-bottom: 23px;
+					padding-bottom: 19px;
 					font-style: normal;
 					font-weight: bold;
 					font-size: 14px;
@@ -37,7 +37,7 @@ footer {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin-top: 80px;
+				margin-top: 75px;
 				
 				.btn {
 					width: 300px;
@@ -58,9 +58,10 @@ footer {
 				flex-direction: column;
 				align-items: flex-end;
 				width: 33%;
-				margin-top: 80px;
+				margin-top: 75px;
 
 				.email {
+					padding-bottom: 27px;
 					font-style: normal;
 					font-weight: normal;
 					font-size: 18px;
