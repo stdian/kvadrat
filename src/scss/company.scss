@@ -1,0 +1,221 @@
+@import "header";
+@import "footer";
+@import "global";
+
+main {
+	.company-header {
+		width: 1240px;
+		min-height: 484px;
+		margin: 0 auto;
+		background: #F0F0F0;
+
+		.company {
+			display: flex;
+
+			.left {
+				margin-top: 63px;
+				padding: 0 60px;
+
+				h1 {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 60px;
+					line-height: 130%;
+					color: #000000;
+					text-transform: uppercase;
+				}
+
+				p {
+					padding-top: 63px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 160%;
+					color: #000000;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.expert-container {
+		width: 1240px;
+		min-height: 592px;
+		margin: 0 auto;
+
+		.expert {
+			img {
+				float: left;
+				margin-top: 127px;
+				margin-left: 71px;
+			}
+
+			.right {
+				float: right;
+				margin-top: 165px;
+				margin-right: 115px;
+
+				h1 {
+					padding-bottom: 28px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 48px;
+					line-height: 130%;
+					color: #000000;
+				}
+
+				p {
+					width: 486px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 160%;
+					color: #000000;
+				}
+			}
+		}
+	}
+
+	.gallery-container {
+		width: 1240px;
+		min-height: 908px;
+		margin: 0 auto;
+		background: #2A2A2A;
+
+		.title {
+			padding-top: 81px;
+			padding-left: 63px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 130%;
+			color: #FFFFFF;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 500px;
+			margin-top: 61px;
+	
+			.swiper-wrapper {
+				.swiper-slide {
+					position: relative;
+					width: 500px;
+					height: 500px;
+
+					p {
+						position: absolute;
+						bottom: 28px;
+						padding: 0 43px;
+
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 160%;
+						color: #FFFFFF;
+					}
+				}
+	
+				#second-slider-slide-1 {
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64%, #000000 100%), url("../img/main/secondSlider/secondslide1.png");
+				}
+	
+				#second-slider-slide-2 {
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64%, #000000 100%), url("../img/main/secondSlider/secondslide2.png");
+				}
+	
+				#second-slider-slide-3 {
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64%, #000000 100%), url("../img/main/secondSlider/secondslide3.png");
+				}
+	
+				#second-slider-slide-4 {
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64%, #000000 100%), url("../img/main/secondSlider/secondslide4.png");
+				}
+			}
+		}
+
+		.slide-pagination-container {
+			justify-content: center;
+			margin-top: 32px;
+			
+			.slider-progress-container {
+				#slider-progress-bar {
+					background: linear-gradient(to right, #FF0000 25%, #FFFFFF 25%, #FFFFFF 75%);
+				}
+
+				.slider-progress-text {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.competence-container {
+		width: 1240px;
+		min-height: 592px;
+		margin: 0 auto;
+
+		.title {
+			padding-top: 86px;
+			padding-left: 73px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 130%;
+			color: #000000;
+		}
+
+		.competence {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			row-gap: 32px;
+			margin-top: 60px;
+			padding: 0 60px 128px 60px;
+			column-gap: 32px;
+
+			.item {
+				position: relative;
+				min-width: 256px;
+				min-height: 256px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
+
+				img {
+					&:nth-child(1) {
+						margin-top: 22px;
+						margin-left: 28px;
+					}
+
+					&:nth-child(2) {
+						margin-top: 24px;
+						margin-left: 23px;
+					}
+
+					&:nth-child(3) {
+						margin-top: 21px;
+						margin-left: 23px;
+					}
+
+					&:nth-child(4) {
+						margin-top: 26px;
+						margin-left: 24px;
+					}
+				}
+
+				p {
+					position: absolute;
+					bottom: 20px;
+					left: 27px;
+
+					font-style: normal;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 160%;
+					color: #000000;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

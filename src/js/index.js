@@ -1,8 +1,7 @@
 import "../index.html"
 import "../scss/index.scss"
 
-// import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js"
-
+// eslint-disable-next-line no-undef
 const swiper = new Swiper(".first-swiper", {
 	// Optional parameters
 	loop: true,
@@ -21,6 +20,7 @@ window.firstSliderGoBack = () => {
 	swiper.slidePrev()
 }
 
+// eslint-disable-next-line no-undef
 const secondSwiper = new Swiper(".second-swiper", {
 	loop: true,
 	effect: "coverflow",
@@ -42,7 +42,7 @@ const secondSwiper = new Swiper(".second-swiper", {
 		// eslint-disable-next-line object-shorthand
 		renderCustom: function(_swiper, current, total) {
 			document.getElementById("second-slider-progress-bar").style.background = `linear-gradient(to right, #FF0000 ${(current / total) * 100}%, #FFFFFF ${(current / total) * 100}%, #FFFFFF 75%, #FFFFFF 100%)`
-			return current + "/" + total
+			return `${current}/${total}`
 		},
 	},
 })
@@ -55,6 +55,7 @@ window.secondSliderGoBack = () => {
 	secondSwiper.slidePrev()
 }
 
+// eslint-disable-next-line no-undef
 const thirdSwiper = new Swiper(".third-swiper", {
 	// Optional parameters
 	loop: false,
@@ -66,7 +67,7 @@ const thirdSwiper = new Swiper(".third-swiper", {
 		// eslint-disable-next-line object-shorthand
 		renderCustom: function(_swiper, current, total) {
 			document.getElementById("third-slider-progress-bar").style.background = `linear-gradient(to right, #FF0000 ${(current / total) * 100}%, #000000 ${(current / total) * 100}%, #000000 75%, #000000 100%)`
-			return current + "/" + total
+			return `${current}/${total}`
 		},
 	},
 })
