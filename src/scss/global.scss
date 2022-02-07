@@ -113,3 +113,34 @@ html, body {
 		}
 	}
 }
+
+.press-article {
+	position: relative;
+	width: 352px;
+	min-height: 407px;
+	border-bottom: 1px solid #D2D2D2;
+
+	.press-article-date {
+		padding-top: 20px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 160%;
+		color: #808080;
+	}
+
+	.press-article-text {
+		padding-top: 9px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 160%;
+		color: #000000;
+	}
+	
+	.press-article-arrow {
+		position: absolute;
+		bottom: 16px;
+		right: 0;
+	}
+}

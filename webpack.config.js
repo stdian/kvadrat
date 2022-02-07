@@ -70,6 +70,14 @@ const plugins = () => {
 				collapseWhitespace: isProd,
 			},
 		}),
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, "src/presscenter.html"),
+			filename: "presscenter.html",
+			chunks: ["presscenter"],
+			minify: {
+				collapseWhitespace: isProd,
+			},
+		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: `./css/${filename("css")}`,
@@ -119,6 +127,7 @@ module.exports = {
 		notfound: "./js/404.js",
 		products: "./js/products.js",
 		company: "./js/company.js",
+		presscenter: "./js/presscenter.js",
 	},
 	output: {
 		filename: `./js/${filename("js")}`,
