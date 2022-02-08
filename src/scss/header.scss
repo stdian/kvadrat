@@ -41,6 +41,11 @@ header {
 					line-height: 140%;
 					font-feature-settings: "pnum" on, "lnum" on;
 					color: #FFFFFF;
+					text-decoration: none;
+
+					&:visited, &:focus {
+						color: #FFFFFF;
+					}
 				}
 
 				.messengers-container {
@@ -73,38 +78,42 @@ header {
 			margin: 0 auto;
 			padding: 14px 60px;
 
-			.logo-container {
-				display: flex;
-				align-items: center;
+			a {
+				text-decoration: none;
 
-				.logo-text-container {
-					width: 159px;
-					margin-left: 15px;
-
-					.logo-text-main {
-						font-style: normal;
-						font-weight: 900;
-						font-size: 26px;
-						line-height: 90%;
-						color: #000000;
-						text-transform: uppercase;
-					}
-
-					.logo-text-red {
-						font-style: normal;
-						font-weight: 900;
-						font-size: 17px;
-						line-height: 90%;
-						color: #FF0000;
-						text-transform: uppercase;
-					}
-
-					.logo-text-down {
-						font-style: normal;
-						font-weight: normal;
-						font-size: 12px;
-						line-height: 90%;
-						color: #000000;
+				.logo-container {
+					display: flex;
+					align-items: center;
+	
+					.logo-text-container {
+						width: 159px;
+						margin-left: 15px;
+	
+						.logo-text-main {
+							font-style: normal;
+							font-weight: 900;
+							font-size: 26px;
+							line-height: 90%;
+							color: #000000;
+							text-transform: uppercase;
+						}
+	
+						.logo-text-red {
+							font-style: normal;
+							font-weight: 900;
+							font-size: 17px;
+							line-height: 90%;
+							color: #FF0000;
+							text-transform: uppercase;
+						}
+	
+						.logo-text-down {
+							font-style: normal;
+							font-weight: normal;
+							font-size: 12px;
+							line-height: 90%;
+							color: #000000;
+						}
 					}
 				}
 			}

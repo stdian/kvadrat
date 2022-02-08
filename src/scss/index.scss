@@ -57,8 +57,6 @@ main {
 		}
 	}
 
-	
-
 	.block-title-container {
 		display: flex;
 		align-items: center;
@@ -504,7 +502,7 @@ main {
 		}
 	}
 
-	.contractors-container {
+	.contragents-container {
 		min-height: 910px;
 		background: #F4F4F4;
 
@@ -532,30 +530,6 @@ main {
 				width: 544px;
 				margin-top: 9px;
 				
-			}
-		}
-
-		.contractor {
-			width: 160px;
-
-			.contractor-image {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				width: 160px;
-				height: 160px;
-				background: #FFFFFF;
-				box-shadow: 0px 16px 64px rgba(0, 0, 0, .04);
-			}
-
-			.contractor-name {
-				padding-top: 21px;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 16px;
-				line-height: 160%;
-				color: #000000;
 			}
 		}
 
@@ -603,11 +577,16 @@ main {
 			margin-top: 66px;
 			
 			.swiper-wrapper {
-				.swiper-slide {
-					position: relative;
-					width: 352px;
-					min-height: 407px;
+				a {
+					text-decoration: none;
+					
+					.swiper-slide {
+						position: relative;
+						width: 352px;
+						min-height: 407px;
+					}
 				}
+				
 			}
 		}
 

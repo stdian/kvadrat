@@ -68,6 +68,11 @@ footer {
 					line-height: 160%;
 					color: #FF0000;
 					text-align: right;
+					text-decoration: none;
+
+					&:visited, &:focus {
+						color: #FF0000;
+					}
 				}
 
 				.address {

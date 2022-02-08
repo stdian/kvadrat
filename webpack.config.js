@@ -86,6 +86,22 @@ const plugins = () => {
 				collapseWhitespace: isProd,
 			},
 		}),
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, "src/contacts.html"),
+			filename: "contacts.html",
+			chunks: ["contacts"],
+			minify: {
+				collapseWhitespace: isProd,
+			},
+		}),
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, "src/contragents.html"),
+			filename: "contragents.html",
+			chunks: ["contragents"],
+			minify: {
+				collapseWhitespace: isProd,
+			},
+		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: `./css/${filename("css")}`,
@@ -137,6 +153,8 @@ module.exports = {
 		company: "./js/company.js",
 		presscenter: "./js/presscenter.js",
 		article: "./js/article.js",
+		contacts: "./js/contacts.js",
+		contragents: "./js/contragents.js",
 	},
 	output: {
 		filename: `./js/${filename("js")}`,
