@@ -13,6 +13,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link href="http://fonts.cdnfonts.com/css/pt-root-ui" rel="stylesheet">
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 	</head>
 	<body>
 		<header>
@@ -88,7 +89,44 @@
 			</div>
 		</header>
 		<main>
+			<section class="contacts-container">
+				<h1>Контакты</h1>
 
+				<div class="contacts-data">
+					<div class="contact-item">
+						<img src="./img/contacts/contacts_phone.svg" alt="">
+						<a href="tel:+78123279684">+7 (812) 327-96-84</a>
+					</div>
+					<div class="contact-item">
+						<img src="./img/contacts/contacts_email.svg" alt="">
+						<a href="mailto:contact@kvadrat-sg.ru">contact@kvadrat-sg.ru</a>
+					</div>
+					<div class="contact-item" id="contact-address">
+						<img src="./img/contacts/contacts_address.svg" alt="">
+						<p>196084,Россия, Санкт-Петербург, ул. Коли Томчака, д. 9.лит Е</p>
+					</div>
+				</div>
+
+				<div class="map-form-container">
+					<div id="map"></div>
+					<form action="">
+						<h5>Обратная связь</h5>
+						<div class="input-container">
+							<input type="text" placeholder="Ваше имя*" required name="name" id="name">
+						</div>
+						<div class="input-container">
+							<input type="phone" placeholder="Телефон" name="phone" id="phone">
+						</div>
+						<div class="input-container">
+							<input type="email" placeholder="E-mail*" required name="email" id="email">
+						</div>
+						<label class="comment-header" for="comment">Комментарий</label>
+						<textarea name="comment" id="comment"></textarea>
+						<p class="warning">Нажимая кнопку «Отправить заявку», вы соглашаетесь с <strong>Политикой обработки персональных данных</strong></p>
+						<button type="submit">Отправить заявку</button>
+					</form>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<div class="footer-container">

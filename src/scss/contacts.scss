@@ -1,3 +1,167 @@
 @import "header";
 @import "footer";
 @import "global";
+
+header {
+	.search-header-container {
+		box-shadow: none;
+	}
+}
+
+main {
+	width: 1240px;
+	margin: 0 auto;
+	background: #F4F4F4;
+
+	.contacts-container {
+		h1 {
+			padding-top: 93px;
+			padding-left: 60px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 60px;
+			line-height: 130%;
+			color: #000000;
+			text-transform: uppercase;
+		}
+
+		.contacts-data {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 64px;
+			padding: 0 60px;
+
+			.contact-item {
+				display: flex;
+				align-items: center;
+
+				img {
+					margin-right: 16px;
+				}
+
+				a, p {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 160%;
+					color: #000000;
+					text-decoration: none;
+				}
+
+				a:visited, a:focus {
+					color: #000000;
+				}
+			}
+
+			#contact-address {
+				p {
+					max-width: 310px;
+				}
+			}
+		}
+
+		.map-form-container {
+			display: flex;
+			width: 100%;
+			min-height: 696px;
+			margin-top: 40px;
+
+			#map {
+				width: 828px;
+				height: 100%;
+				min-height: 696px;
+			}
+
+			form {
+				position: relative;
+				width: 412px;
+				min-height: 696px;
+				background: #FFFFFF;
+
+				h5 {
+					padding: 56px 37px 32px;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 25px;
+					line-height: 130%;
+					color: #000000;
+				}
+
+				.input-container {
+					width: 320px;
+					margin: 0 60px 24px 32px;
+					padding-bottom: 8px;
+					border-bottom: 1px solid #D2D2D2;
+
+					input {
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 160%;
+						border: 0;
+						color: #000000;
+
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+
+				.comment-header {
+					padding: 0 60px 0 32px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 160%;
+					color: #000000;
+				}
+
+				textarea {
+					width: 320px;
+					height: 170px;
+					margin: 8px 60px 24px 32px;
+					padding: 3px 5px;
+					border: 1px solid #D2D2D2;
+
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 160%;
+					color: #000000;
+					resize: none;
+
+					&:focus {
+						outline: none;
+					}
+				}
+				
+				.warning {
+					padding: 0 100px 0 33px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 160%;
+					color: #737373;
+				}
+
+				button {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					min-height: 64px;
+					border: 0;
+					border-radius: 0;
+					background: #FF0000;
+
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 160%;
+					color: #FFFFFF;
+					text-transform: uppercase;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
