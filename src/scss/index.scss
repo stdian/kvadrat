@@ -4,22 +4,24 @@
 
 
 main {
-	width: 1240px;
+	width: 100%;
 	margin: 0 auto;
 
 	.first-swiper {
 		.swiper-wrapper {
 			#first-slider-slide-1 {
-				min-height: 540px;
+				min-height: 60vh;
 				background-image: url("../img/main/firstSlider/slide1.png");
+				background-size: cover;
 
 				.slide-text {
-					padding-top: 148px;
-					padding-left: 56px;
+					padding-top: 16vh;
+					padding-left: 4.5vw;
+					padding-right: 4.5vw;
 
 					font-style: normal;
 					font-weight: bold;
-					font-size: 64px;
+					font-size: 7vh;
 					line-height: 130%;
 					color: #FFFFFF;
 					text-transform: uppercase;
@@ -28,8 +30,9 @@ main {
 				.slide-bottom-container {
 					display: flex;
 					justify-content: space-between;
-					margin-top: 100px;
-					padding: 0 60px;
+					margin-top: 11vh;
+					padding: 0 4.84vw;
+					padding-bottom: 6.88vh;
 				}
 
 				.slider-progress-bar {
@@ -60,22 +63,22 @@ main {
 	.block-title-container {
 		display: flex;
 		align-items: center;
-		padding-top: 128px;
-		padding-left: 61px;
+		padding-top: 14vh;
+		padding-left: 5vw;
 
 		.block-title-number {
 			font-style: normal;
 			font-weight: 900;
-			font-size: 18px;
+			font-size: 2vh;
 			line-height: 160%;
 			color: #FF0000;
 		}
 
 		.block-title-hr {
-			width: 48px;
+			width: 3.87vw;
 			height: 4px;
-			margin-left: 9px;
-			margin-right: 30px;
+			margin-left: .72vw;
+			margin-right: 2.4vw;
 			border: 0;
 			background-color: #FF0000;
 		}
@@ -83,7 +86,7 @@ main {
 		.block-title {
 			font-style: normal;
 			font-weight: bold;
-			font-size: 60px;
+			font-size: 6.66vh;
 			line-height: 130%;
 			text-transform: uppercase;
 		}
@@ -91,116 +94,102 @@ main {
 
 	.about-container {
 		width: 100%;
-		min-height: 1100px;
 		background: #EAEAEA;
 		background-image: url("../img/main/about/aboutbg.png");
 		background-position: 100% 0;
 		background-repeat: no-repeat;
 
-		.left-container {
-			float: left;
-			margin-top: 45px;
-			margin-left: 161px;
+		.content-container {
+			display: flex;
+			justify-content: space-between;
 
-			h2 {
-				width: 503px;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 20px;
-				line-height: 160%;
-				color: #000000;
-				text-transform: uppercase;
-			}
-
-			.text-container {
-				display: flex;
-				align-items: flex-start;
-				margin-top: 42px;
-
-				img {
-					margin-top: 5px;
-				}
-
-				.text-with-marker {
-					width: 368px;
-					margin-left: 73px;	
+			.left-container {
+				float: left;
+				margin-top: 5vh;
+				margin-bottom: 13vh;
+				margin-left: 13vw;
+				
+				h2 {
+					width: 41vw;
 					font-style: normal;
-					font-weight: normal;
-					font-size: 18px;
+					font-weight: bold;
+					font-size: 2.22vh;
 					line-height: 160%;
 					color: #000000;
+					text-transform: uppercase;
+				}
+	
+				.text-container {
+					display: flex;
+					align-items: flex-start;
+					margin-top: 4.66vh;
+	
+					img {
+						margin-top: .55vh;
+					}
+	
+					.text-with-marker {
+						width: 30vw;
+						margin-left: 5.88vw;	
+						font-style: normal;
+						font-weight: normal;
+						font-size: 2vh;
+						line-height: 160%;
+						color: #000000;
+					}
+				}
+	
+				button {
+					margin-top: 5.66vh;
+					margin-left: 7.82vw;
 				}
 			}
+	
+			.right-container {
+				float: right;
+				margin-top: 4.22vh;
+				margin-right: 4.83vw;
 
-			button {
-				margin-top: 51px;
-				margin-left: 97px;
+				img {
+					width: 38vw;
+				}
 			}
-		}
-
-		.right-container {
-			float: right;
-			margin-top: 38px;
-			margin-right: 60px;
 		}
 	}
 
 	.gallery-container {
-		min-height: 960px;
 		background: #2A2A2A;
 
 		.block-title-container {
 			display: flex;
 			align-items: center;
-			padding-top: 104px;
-			padding-left: 61px;
-	
-			.block-title-number {
-				font-style: normal;
-				font-weight: 900;
-				font-size: 18px;
-				line-height: 160%;
-				color: #FF0000;
-			}
-	
-			.block-title-hr {
-				width: 48px;
-				height: 4px;
-				margin-left: 9px;
-				margin-right: 30px;
-				border: 0;
-				background-color: #FF0000;
-			}
+			padding-top: 11.55vh;
 	
 			.block-title {
-				font-style: normal;
-				font-weight: bold;
-				font-size: 60px;
-				line-height: 130%;
 				color: #FFFFFF;
-				text-transform: uppercase;
 			}
 		}
 
 		.second-swiper {
 			width: 100%;
-			height: 500px;
-			margin-top: 61px;
+			height: 40vw;
+			margin-top: 6.77vh;
 	
 			.swiper-wrapper {
 				.swiper-slide {
 					position: relative;
-					width: 500px;
-					height: 500px;
+					width: 40vw;
+					height: 40vw;
+					background-size: cover;
 
 					p {
 						position: absolute;
-						bottom: 28px;
-						padding: 0 43px;
+						bottom: 3.11vh;
+						padding: 0 3.47vw;
 
 						font-style: normal;
 						font-weight: normal;
-						font-size: 16px;
+						font-size: 1.77vh;
 						line-height: 160%;
 						color: #FFFFFF;
 					}
@@ -226,7 +215,8 @@ main {
 
 		.second-slider-pagination-container {
 			justify-content: center;
-			margin-top: 32px;
+			margin-top: 3.55vh;
+			padding-bottom: 13.4vh;
 			
 			.slider-progress-container {
 				#second-slider-progress-bar {
@@ -241,17 +231,16 @@ main {
 	}
 
 	.competence-container {
-		min-height: 1072px;
 		background: #F4F4F4;
 
 		.competence {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			margin-top: 50px;
-			padding: 0 60px;
+			margin-top: 5.55vh;
+			padding: 0 4.83vw;
 
 			.left {
-				width: 544px;
+				width: 44vw;
 				background: #FF0000;
 				box-shadow: 0px 4px 40px rgba(0, 0, 0, .08);
 
@@ -259,56 +248,44 @@ main {
 					padding: 45px;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 32px;
+					font-size: 3.55vh;
 					line-height: 130%;
 					color: #FFFFFF;
+				}
+
+				img {
+					width: 44vw;
 				}
 			}
 	
 			.right {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				row-gap: 32px;
-				column-gap: 32px;
+				row-gap: 3.55vh;
+				column-gap: 3.55vh;
 
 				.item {
 					position: relative;
-					min-width: 256px;
-					min-height: 256px;
+					min-width: 28vh;
+					min-height: 28vh;
 
 					background: #FFFFFF;
 					box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
 
 					img {
-						&:nth-child(1) {
-							margin-top: 22px;
-							margin-left: 28px;
-						}
-
-						&:nth-child(2) {
-							margin-top: 24px;
-							margin-left: 23px;
-						}
-
-						&:nth-child(3) {
-							margin-top: 21px;
-							margin-left: 23px;
-						}
-
-						&:nth-child(4) {
-							margin-top: 26px;
-							margin-left: 24px;
-						}
+						width: 6.77vh;
+						margin-top: 2.55vh;
+						margin-left: 2vw;
 					}
 
 					p {
 						position: absolute;
-						bottom: 20px;
-						left: 27px;
+						bottom: 2.22vh;
+						padding: 0 2.2vw;
 
 						font-style: normal;
 						font-weight: bold;
-						font-size: 14px;
+						font-size: 1.55vh;
 						line-height: 160%;
 						color: #000000;
 						text-transform: uppercase;
@@ -321,85 +298,38 @@ main {
 			display: flex;
 			justify-content: center;
 			width: 100%;
-			margin-top: 83px;
+			margin-top: 9vh;
+			padding-bottom: 12.88vh;
 		}
 	}
 
 	.products-container {
-		min-height: 1034px;
-
-		.items {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			row-gap: 32px;
-			margin-top: 68px;
-			padding: 0 60px;
-			column-gap: 32px;
-
-			.item {
-				position: relative;
-				display: flex;
-				width: 544px;
-				min-height: 232px;
-				background: #F2F2F2;
-
-				.item-name {
-					padding-top: 27px;
-					padding-left: 24px;
-					font-style: normal;
-					font-weight: bold;
-					font-size: 20px;
-					line-height: 130%;
-					color: #000000;
-				}
-
-				.item-char {
-					position: absolute;
-					bottom: 24px;
-					margin-left: 24px;
-
-					.info-string {
-						display: flex;
-						justify-content: space-between;
-						width: 265px;
-						margin-top: 11px;
-						border-bottom: 1px solid #C9C9C9;
-
-						p {
-							font-style: normal;
-							font-weight: normal;
-							font-size: 13px;
-							line-height: 160%;
-							color: #000000;
-						}
-					}
-				}
-			}
-		}
-
 		.products-items {
-			margin-top: 68px;
-			padding: 0 60px;
+			margin-top: 7.6vh;
+			padding: 0 4.83vw;
 		}
 
 		.btn-container {
 			display: flex;
 			justify-content: center;
 			width: 100%;
-			margin-top: 83px;
+			padding-top: 9.22vh;
+			padding-bottom: 12.2vh;
 		}
 	}
 
 	.advantages-container {
-		min-height: 1088px;
+		padding-bottom: 16.33vh;
 		background: url("../img/main/advantages/abg.png");
+		background-size: cover;
+
 		.block-title {
 			color: #FFFFFF;
 		}
 
 		.advantages {
 			position: relative;
-			padding: 0 60px;
+			padding: 0 4.83vw;
 
 			.container {  
 				display: grid;
@@ -408,11 +338,11 @@ main {
 				grid-template-columns: 1fr 8px 1fr;
 				grid-auto-flow: row;
 				gap: 0px 0px;
-				margin-top: 57px;
+				margin-top: 6.33vh;
 
 				.text1 {
 					grid-area: text1;
-					padding: 20px 98px 80px 101px;
+					padding: 2.22vh 7.9vw 8.88vh 8.14vw;
 				}
 	
 				.line1 {
@@ -425,12 +355,12 @@ main {
 				
 				.text2 {
 					grid-area: text2; 
-					padding: 20px 85px 80px 114px;
+					padding: 2.22vh 6.85vw 8.88vh 9.19vw;
 				}
 				
 				.text3 {
 					grid-area: text3;
-					padding: 75px 98px 40px 101px;
+					padding: 8.33vh 7.9vw 4.44vh 8.14vw;
 				}
 				
 				.line2 {
@@ -461,18 +391,18 @@ main {
 				
 				.text4 {
 					grid-area: text4;
-					padding: 75px 85px 40px 114px;
+					padding: 8.33vh 6.85vw 4.44vh 9.19vw;
 				}
 	
 				#horizontal1, #horizontal2 {
-					width: 448px;
+					width: 36vw;
 					height: 4px;
 				}
 	
 	
 				#vertical1, #vertical2 {
 					width: 4px;
-					height: 280px;
+					height: 31vh;
 				}
 	
 				.dot {
@@ -482,10 +412,10 @@ main {
 				}
 	
 				.text-header {
-					padding-bottom: 22px;
+					padding-bottom: 2.44vh;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 25px;
+					font-size: 2.77vh;
 					line-height: 130%;
 					color: #FFFFFF;
 				}
@@ -494,7 +424,7 @@ main {
 					width: 363px;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 18px;
+					font-size: 2vh;
 					line-height: 160%;
 					color: #FFFFFF;
 				}
@@ -503,21 +433,21 @@ main {
 	}
 
 	.contragents-container {
-		min-height: 910px;
+		padding-bottom: 14vh;
 		background: #F4F4F4;
 
 		.first-line {
 			display: flex;
 			justify-content: space-between;
-			margin-top: 55px;
-			padding: 0 60px 0 162px;
+			margin-top: 6vh;
+			padding: 0 4.84vw 0 13vw;
 
 			.left {
 				p {
-					width: 406px;
+					width: 32.7vw;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 20px;
+					font-size: 2.22vh;
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
@@ -527,41 +457,40 @@ main {
 			.right {
 				display: flex;
 				justify-content: space-between;
-				width: 544px;
-				margin-top: 9px;
-				
+				width: 43.87vw;
+				margin-top: 1vh;
 			}
 		}
 
 		.second-line {
 			display: flex;
 			justify-content: space-between;
-			margin-top: 47px;
-			padding: 0 60px;
+			margin-top: 5.22vh;
+			padding: 0 4.83vw;
 
 			.left {
 				display: flex;
 				justify-content: space-between;
-				width: 736px;
+				width: 60vw;
 			}
 
 			.right {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
-				margin-top: 133px;
+				margin-top: 14.7vh;
 				
 				#line1 {
-					width: 45px;
-					height: 6px;
-					margin-bottom: 14px;
+					width: 3.62vw;
+					height: .66vh;
+					margin-bottom: 1.55vh;
 					border: 0;
 					background: #FF0000;
 				}
 
 				#line2 {
-					width: 87px;
-					height: 6px;
+					width: 7vw;
+					height: .66vh;
 					border: 0;
 					background: #FF0000;
 				}
@@ -570,11 +499,12 @@ main {
 	}
 
 	.press-container {
-		min-height: 920px;
-
+		padding-bottom: 13.22vh;
 		.third-swiper {
 			overflow-x: hidden;
-			margin-top: 66px;
+			width: calc(100% - 9.66vw);
+			margin: 0 auto;
+			margin-top: 7.33vh;
 			
 			.swiper-wrapper {
 				a {
@@ -582,8 +512,8 @@ main {
 					
 					.swiper-slide {
 						position: relative;
-						width: 352px;
-						min-height: 407px;
+						width: 28.38vw;
+						min-height: 45vh;
 					}
 				}
 				
@@ -592,7 +522,7 @@ main {
 
 		.third-slider-pagination-container {
 			justify-content: center;
-			margin-top: 60px;
+			margin-top: 6.66vh;
 			
 			.slider-progress-container {
 				#third-slider-progress-bar {

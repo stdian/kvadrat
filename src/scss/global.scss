@@ -15,13 +15,13 @@ html, body {
 }
 
 .btn {
-	width: 266px;
-	padding: 19px 0;
+	width: 21.45vw;
+	padding: 2.1vh 0;
 	border: 4px solid red;
 	background-color: transparent;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 1.55vh;
 	line-height: 160%;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -39,44 +39,45 @@ html, body {
 .products-items {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	row-gap: 32px;
-	column-gap: 32px;
+	row-gap: 3.55vh;
+	column-gap: 3.55vh;
 
 	.item {
 		position: relative;
 		display: flex;
-		width: 544px;
-		min-height: 232px;
+		width: 44vw;
+		min-height: 25.7vh;
 		background: #F2F2F2;
 
-		.item-name {
-			padding-top: 27px;
-			padding-left: 24px;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 20px;
-			line-height: 130%;
-			color: #000000;
-		}
+		.item-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: inherit;
+			padding: 3vh 2vw 2.66vh 2vw;
 
-		.item-char {
-			position: absolute;
-			bottom: 24px;
-			margin-left: 24px;
+			.item-name {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 2.22vh;
+				line-height: 130%;
+				color: #000000;
+			}
 
-			.info-string {
-				display: flex;
-				justify-content: space-between;
-				width: 265px;
-				margin-top: 11px;
-				border-bottom: 1px solid #C9C9C9;
-
-				p {
-					font-style: normal;
-					font-weight: normal;
-					font-size: 13px;
-					line-height: 160%;
-					color: #000000;
+			.item-char {
+				.info-string {
+					display: flex;
+					justify-content: space-between;
+					margin-top: 1.22vh;
+					border-bottom: 1px solid #C9C9C9;
+	
+					p {
+						font-style: normal;
+						font-weight: normal;
+						font-size: 1.44vh;
+						line-height: 160%;
+						color: #000000;
+					}
 				}
 			}
 		}
@@ -87,7 +88,9 @@ html, body {
 	display: flex;
 
 	img {
+		width: 5.16vw;
 		cursor: pointer;
+		
 	}
 
 	.slider-progress-container {
@@ -97,17 +100,17 @@ html, body {
 		justify-content: flex-end;
 
 		.slider-progress-bar {
-			width: 104px;
+			width: 8.38vw;
 			height: 4px;
 			margin: 0 12px;
 			border: 0;
 		}
 
 		.slider-progress-text {
-			padding-bottom: 10px;
+			padding-bottom: 1vh;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 14px;
+			font-size: 1.55vh;
 			line-height: 160%;
 			color: #FFFFFF;
 		}
@@ -122,54 +125,62 @@ html, body {
 
 .press-article {
 	position: relative;
-	width: 352px;
-	min-height: 407px;
+	width: 28.38vw;
+	min-height: 45vh;
 	border-bottom: 1px solid #D2D2D2;
 
 	.press-article-date {
-		padding-top: 20px;
+		padding-top: 2.22vh;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 1.55vh;
 		line-height: 160%;
 		color: #808080;
 	}
 
 	.press-article-text {
-		padding-top: 9px;
+		padding-top: 1vh;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
+		font-size: 1.55vh;
 		line-height: 160%;
 		color: #000000;
+	}
+
+	.press-article-image {
+		width: 28.38vw;
 	}
 	
 	.press-article-arrow {
 		position: absolute;
-		bottom: 16px;
+		bottom: 1.77vh;
 		right: 0;
 	}
 }
 
 .contragent {
-	width: 160px;
+	width: 17.7vh;
 
 	.contragent-image {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 160px;
-		height: 160px;
+		width: 17.7vh;
+		height: 17.7vh;
 		background: #FFFFFF;
 		box-shadow: 0px 16px 64px rgba(0, 0, 0, .04);
+
+		img {
+			width: 70%;
+		}
 	}
 
 	.contragent-name {
-		padding-top: 21px;
+		padding-top: 2.33vh;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 1.77vh;
 		line-height: 160%;
 		color: #000000;
 	}
