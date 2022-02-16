@@ -18,6 +18,10 @@ header {
 				justify-content: space-between;
 				float: left;
 				width: 30vw;
+
+				@media (max-width: $mobile) {
+					display: none;
+				}
 			}
 
 			.top-bar-container-right {
@@ -25,14 +29,27 @@ header {
 				align-items: center;
 				float: right;
 
+				@media (max-width: $mobile) {
+					justify-content: space-between;
+					width: 100%;
+				}
+
 				.address-container {
 					display: flex;
 					justify-content: space-between;
 					margin-right: 3.7vw;
 
+					@media screen and (max-width: $mobile) {
+						margin-right: 0;
+					}
+
 					img {
 						height: 3vh;
 						margin-right: .6vw;
+
+						@media screen and (max-width: $mobile) {
+							margin-right: 2.13vw;
+						}
 					}
 				}
 
@@ -61,6 +78,16 @@ header {
 					img {
 						width: 2.5vw;
 					}
+
+					@media (max-width: $mobile) {
+						display: none;
+					}
+				}
+
+				.time {
+					@media (max-width: $mobile) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -68,7 +95,7 @@ header {
 		.infotext {
 			font-style: normal;
 			font-weight: normal;
-			font-size: 2vh;
+			font-size: 1.8vh;
 			line-height: 160%;
 			color: #D2D2D2;
 		}
@@ -95,6 +122,10 @@ header {
 
 					img {
 						width: 6.66vh;
+
+						@media screen and (max-width: $mobile) {
+							width: 4.84vh;
+						}
 					}
 	
 					.logo-text-container {
@@ -107,6 +138,10 @@ header {
 							line-height: 90%;
 							color: #000000;
 							text-transform: uppercase;
+
+							@media screen and (max-width: $mobile) {
+								font-size: 2.42vh;
+							}
 						}
 	
 						.logo-text-red {
@@ -116,6 +151,10 @@ header {
 							line-height: 90%;
 							color: #FF0000;
 							text-transform: uppercase;
+
+							@media screen and (max-width: $mobile) {
+								display: none;
+							}
 						}
 	
 						.logo-text-down {
@@ -124,9 +163,17 @@ header {
 							font-size: 1.33vh;
 							line-height: 90%;
 							color: #000000;
+
+							@media screen and (max-width: $mobile) {
+								display: none;
+							}
 						}
 					}
 				}
+			}
+
+			.mobile-menu-button {
+				width: 10.66vw;
 			}
 
 			.header-menu-container {
@@ -134,6 +181,10 @@ header {
 				justify-content: space-between;
 				width: 57vw;
 				list-style-type: none;
+
+				@media screen and (max-width: $mobile) {
+					display: none;
+				}
 
 				.header-menu-item {
 					font-style: normal;
@@ -149,6 +200,14 @@ header {
 					}
 				}
 			}
+
+			.mobile-menu-button {
+				display: none;
+
+				@media screen and (max-width: $mobile) {
+					display: block;
+				}
+			}
 		}
 	}
 	
@@ -159,29 +218,51 @@ header {
 
 		.search-header {
 			display: flex;
+			align-items: center;
 			width: 100%;
 			margin: 0 auto;
 			padding: 1.77vh 5.88vw 1.77vh 4.84vw;
+
+			@media screen and (max-width: $mobile) {
+				justify-content: space-between;
+				padding: 4.26vw;
+			}
 	
 			.catalog-button-container {
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
 				width: 20vw;
-				padding: 1.55vh 3.38vw 1.55vh 1.37vw; 
+				height: 5.33vh;
 				background: #2D2D2D;
+
+				@media screen and (max-width: $mobile) {
+					width: 72vw;
+					height: 7.37vh;
+				}
 
 				img {
 					height: 1.33vh;
+					margin-left: 1.37vw;
+
+					@media screen and (max-width: $mobile) {
+						height: 1.8vh;
+						margin-left: 4.53vw;
+					}
 				}
 				
 				.catalog-buton-text {
+					padding-left: 2.82vw;
 					font-style: normal;
 					font-weight: 600;
 					font-size: 1.33vh;
 					line-height: 160%;
 					color: #FFFFFF;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						padding-left: 10.66vw;
+						font-size: 1.8vh;
+					}
 				}
 			}
 			
@@ -190,15 +271,23 @@ header {
 				align-items: center;
 				margin-right: 4.43vw;
 
+				@media screen and (max-width: $mobile) {
+					position: relative;
+					display: none;
+					width: 100%;
+					margin-right: 0;
+				}
+
 				.search-input {
 					width: 38vw;
 					height: 5.33vh;
-					margin-left: 16px;
-					padding-left: 21px;
-					padding-right: 21px;
+					margin-left: 1.29vw;
+					padding-left: 2.7vw;
+					padding-right: 2.7vw;
 					
 					border: 2px solid #E1E1E1;
 					border-right: none;
+					border-radius: 0;
 
 					font-style: normal;
 					font-weight: 600;
@@ -209,10 +298,41 @@ header {
 					&:focus {
 						outline: none;
 					}
+
+					@media screen and (max-width: $mobile) {
+						width: inherit;;
+						height: 7.37vh;
+						margin-left: 0;
+						font-size: 1.8vh;
+					}
 				}
 
-				img {
+				.search-button {
 					height: 5.33vh;
+
+					@media screen and (max-width: $mobile) {
+						height: 7.37vh;
+					}
+				}
+
+				.search-close-mobile {
+					position: absolute;
+					left: 63.4vw;
+					display: none;
+					height: 4.64vh;
+
+					@media screen and (max-width: $mobile) {
+						display: block;
+					}
+				}
+			}
+
+			.show-search-mobile {
+				display: none;
+				height: 7.37vh;
+
+				@media screen and (max-width: $mobile) {
+					display: block;
 				}
 			}
 
@@ -221,10 +341,18 @@ header {
 				justify-content: space-between;
 				width: 21vw;
 
+				@media screen and (max-width: $mobile) {
+					display: none;
+				}
+
 				.button-container {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+
+					img {
+						width: 1.85vw;
+					}
 
 					.button-text {
 						margin-top: 3px;

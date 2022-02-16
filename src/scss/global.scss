@@ -1,3 +1,5 @@
+$mobile: 600px;
+
 * {
 	font-family: Inter, sans-serif;
 	margin: 0;
@@ -185,5 +187,65 @@ html, body {
 		font-size: 1.77vh;
 		line-height: 160%;
 		color: #000000;
+	}
+}
+
+#mobile-menu {
+	display: none;
+	width: 100%;
+	min-height: 100vh;
+
+	.top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 11vh;
+		padding: 2.4vh 6.4vw 0 2.4vh;
+
+		.logo-container {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+
+			img {
+				width: 4.84vh;
+				margin-right: 4vw;
+			}
+
+			span {
+				font-style: normal;
+				font-weight: 900;
+				font-size: 2.4vh;
+				line-height: 90%;
+				color: #000000;
+				text-transform: uppercase;
+			}
+		}
+
+		.close-button {
+			height: 3.6vh;
+		}
+	}
+
+	.mobile-menu-container {
+		.mobile-menu-item {
+			padding-bottom: 3.6vh;
+			text-align: center;
+
+			a {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 3.6vh;
+				line-height: 130%;
+				color: #2D2D2D;	
+				text-decoration: none;
+				text-transform: uppercase;
+				
+				&:visited, &:focus {
+					color: #2D2D2D;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }

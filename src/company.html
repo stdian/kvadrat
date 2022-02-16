@@ -21,6 +21,23 @@
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	</head>
 	<body>
+		<div id="mobile-menu">
+			<div class="top">
+				<a href="/" class="logo-container">
+					<img src="./img/header/logo.svg" alt="">
+					<span>КВАДРАТ</span>
+				</a>
+				<img src="./img/header/close.svg" class="close-button" onclick="hideMenu()" alt="">
+			</div>
+
+			<ul class="mobile-menu-container">
+				<li class="mobile-menu-item"><a href="/company.html">Компания</a></li>
+				<li class="mobile-menu-item"><a href="/products.html">Продукция</a></li>
+				<li class="mobile-menu-item"><a href="/contragents.html">Контрагенты</a></li>
+				<li class="mobile-menu-item"><a href="/presscenter.html">Пресс-центр</a></li>
+				<li class="mobile-menu-item"><a href="/contacts.html">Контакты</a></li>
+			</ul>
+		</div>
 		<header>
 			<div class="top-bar-container">
 				<div class="top-bar">
@@ -35,7 +52,7 @@
 							<span class="infotext">Санкт-Петербург</span>
 						</div>
 						<a class="phone" href="tel:+79276983648">+7 (927) 698-36-48</a>
-						<span class="infotext">11:00 – 22:00</span>
+						<span class="infotext time">11:00 – 22:00</span>
 						<div class="messengers-container">
 							<img src="./img/header/telegram.svg" alt="">
 							<img src="./img/header/wa.svg" alt="">
@@ -64,6 +81,8 @@
 						<li class="header-menu-item"><a href="/presscenter.html">Пресс-центр</a></li>
 						<li class="header-menu-item"><a href="/contacts.html">Контакты</a></li>
 					</ul>
+
+					<img src="./img/header/mobile_menu.svg" onclick="showMenu()" class="mobile-menu-button" alt="">
 				</div>
 			</div>
 			<div class="search-header-container">
@@ -73,9 +92,11 @@
 						<span class="catalog-buton-text">Каталог продукции</span>
 					</div>
 					<div class="search-container">
+						<img src="./img/header/closesearch.svg" class="search-close-mobile" onclick="hideSearch()" alt="">
 						<input class="search-input" />
-						<img src="./img/header/searchbtn.svg" alt="">
+						<img src="./img/header/searchbtn.svg" class="search-button" alt="">
 					</div>
+					<img src="./img/header/searchbtn.svg" alt="" class="show-search-mobile" onclick="showSearch()">
 					<div class="buttons-container">
 						<div class="button-container">
 							<img src="./img/header/profile.svg" alt="">

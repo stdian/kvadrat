@@ -41,7 +41,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/index.html"),
 			filename: "index.html",
-			chunks: ["index"],
+			chunks: ["index", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -49,7 +49,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/404.html"),
 			filename: "404.html",
-			chunks: ["notfound"],
+			chunks: ["notfound", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -57,7 +57,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/products.html"),
 			filename: "products.html",
-			chunks: ["products"],
+			chunks: ["products", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -65,7 +65,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/company.html"),
 			filename: "company.html",
-			chunks: ["company"],
+			chunks: ["company", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -73,7 +73,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/presscenter.html"),
 			filename: "presscenter.html",
-			chunks: ["presscenter"],
+			chunks: ["presscenter", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -81,7 +81,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/article.html"),
 			filename: "article.html",
-			chunks: ["article"],
+			chunks: ["article", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -89,7 +89,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/contacts.html"),
 			filename: "contacts.html",
-			chunks: ["contacts"],
+			chunks: ["contacts", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -97,7 +97,7 @@ const plugins = () => {
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, "src/contragents.html"),
 			filename: "contragents.html",
-			chunks: ["contragents"],
+			chunks: ["contragents", "mobile"],
 			minify: {
 				collapseWhitespace: isProd,
 			},
@@ -155,6 +155,7 @@ module.exports = {
 		article: "./js/article.js",
 		contacts: "./js/contacts.js",
 		contragents: "./js/contragents.js",
+		mobile: "./js/mobile.js",
 	},
 	output: {
 		filename: `./js/${filename("js")}`,
