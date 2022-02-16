@@ -9,35 +9,33 @@ header {
 }
 
 main {
-	width: 1240px;
-	min-height: 473px;
+	width: 100%;
 	margin: 0 auto;
 	background: #F4F4F4;
 
 	.contragents-header {
 		display: flex;
 		width: 100%;
-		min-height: 484px;
 		background: #FFFFFF;
 
 		.left {
-			padding: 0 60px;
+			padding: 0 4.83vw;
 
 			h1 {
-				padding-top: 93px;
+				padding-top: 10.33vh;
 				font-style: normal;
 				font-weight: bold;
-				font-size: 60px;
+				font-size: 6.66vh;
 				line-height: 130%;
 				color: #000000;
 				text-transform: uppercase;
 			}
 
 			p {
-				padding-top: 38px;
+				padding-top: 4.22vh;
 				font-style: normal;
 				font-weight: bold;
-				font-size: 20px;
+				font-size: 2.22vh;
 				line-height: 160%;
 				color: #000000;
 				text-transform: uppercase;
@@ -50,9 +48,8 @@ main {
 	.contragents-container {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		row-gap: 48px;
-		padding: 110px 60px 130px;	
-		column-gap: 32px;
-		
+		row-gap: 5.33vh;
+		padding: 12.22vh 4.83vw 14.4vh;	
+		column-gap: 2.58vw;
 	}
 }
