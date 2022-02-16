@@ -4,8 +4,7 @@
 
 main {
 	.company-header {
-		width: 1240px;
-		min-height: 484px;
+		width: 100%;
 		margin: 0 auto;
 		background: #F0F0F0;
 
@@ -13,62 +12,68 @@ main {
 			display: flex;
 
 			.left {
-				margin-top: 63px;
-				padding: 0 60px;
+				margin-top: 7vh;
+				padding: 0 4.83vw;
 
 				h1 {
 					font-style: normal;
 					font-weight: bold;
-					font-size: 60px;
+					font-size: 6.66vh;
 					line-height: 130%;
 					color: #000000;
 					text-transform: uppercase;
 				}
 
 				p {
-					padding-top: 63px;
+					padding-top: 7vh;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 20px;
+					font-size: 2.22vh;
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
 				}
 			}
+
+			img {
+				width: 49vw;
+			}
 		}
 	}
 
 	.expert-container {
-		width: 1240px;
-		min-height: 592px;
+		width: 100%;
 		margin: 0 auto;
+		padding-bottom: 12.11vh;
 
 		.expert {
+			display: flex;
+			justify-content: space-between;
+
 			img {
-				float: left;
-				margin-top: 127px;
-				margin-left: 71px;
+				width: 38.45vw;
+				margin-top: 14.11vh;
+				margin-left: 5.73vw;
 			}
 
 			.right {
-				float: right;
-				margin-top: 165px;
-				margin-right: 115px;
+				margin-top: 18.33vh;
+				margin-right: 9.27vw;
 
 				h1 {
-					padding-bottom: 28px;
+					padding-bottom: 3.11vh;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 48px;
+					font-size: 5.33vh;
 					line-height: 130%;
 					color: #000000;
 				}
 
 				p {
-					width: 486px;
+					width: 39.19vw;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 18px;
+					font-size: 2vh;
 					line-height: 160%;
 					color: #000000;
 				}
@@ -77,40 +82,40 @@ main {
 	}
 
 	.gallery-container {
-		width: 1240px;
-		min-height: 908px;
+		width: 100%;
 		margin: 0 auto;
 		background: #2A2A2A;
 
 		.title {
-			padding-top: 81px;
-			padding-left: 63px;
+			padding-top: 9vh;
+			padding-left: 5vw;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 48px;
+			font-size: 5.33vh;
 			line-height: 130%;
 			color: #FFFFFF;
 		}
 
 		.swiper {
 			width: 100%;
-			height: 500px;
-			margin-top: 61px;
+			height: 40vw;
+			margin-top: 6.77vh;
 	
 			.swiper-wrapper {
 				.swiper-slide {
 					position: relative;
-					width: 500px;
-					height: 500px;
+					width: 40vw;
+					height: 40vw;
+					background-size: cover;
 
 					p {
 						position: absolute;
-						bottom: 28px;
-						padding: 0 43px;
+						bottom: 3.11vh;
+						padding: 0 3.47vw;
 
 						font-style: normal;
 						font-weight: normal;
-						font-size: 16px;
+						font-size: 1.77vh;
 						line-height: 160%;
 						color: #FFFFFF;
 					}
@@ -136,7 +141,8 @@ main {
 
 		.slide-pagination-container {
 			justify-content: center;
-			margin-top: 32px;
+			margin-top: 3.55vh;
+			padding-bottom: 12vh;
 			
 			.slider-progress-container {
 				#slider-progress-bar {
@@ -151,16 +157,15 @@ main {
 	}
 
 	.competence-container {
-		width: 1240px;
-		min-height: 592px;
+		width: 100%;
 		margin: 0 auto;
 
 		.title {
-			padding-top: 86px;
-			padding-left: 73px;
+			padding-top: 9.55vh;
+			padding-left: 5.89vw;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 48px;
+			font-size: 5.33vh;
 			line-height: 130%;
 			color: #000000;
 		}
@@ -168,49 +173,33 @@ main {
 		.competence {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			row-gap: 32px;
-			margin-top: 60px;
-			padding: 0 60px 128px 60px;
-			column-gap: 32px;
+			row-gap: 3.55vh;
+			margin-top: 6.66vh;
+			padding: 0 4.83vw 14.22vh 4.83vw;
+			column-gap: 3.55vh;
 
 			.item {
 				position: relative;
-				min-width: 256px;
-				min-height: 256px;
+				min-width: 20.64vw;
+				min-height: 20.64vw;
 
 				background: #FFFFFF;
 				box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
 
 				img {
-					&:nth-child(1) {
-						margin-top: 22px;
-						margin-left: 28px;
-					}
-
-					&:nth-child(2) {
-						margin-top: 24px;
-						margin-left: 23px;
-					}
-
-					&:nth-child(3) {
-						margin-top: 21px;
-						margin-left: 23px;
-					}
-
-					&:nth-child(4) {
-						margin-top: 26px;
-						margin-left: 24px;
-					}
+					width: 6.77vh;
+					margin-top: 2.55vh;
+					margin-left: 2vw;
 				}
 
 				p {
 					position: absolute;
-					bottom: 20px;
-					left: 27px;
+					bottom: 2.22vh;
+					padding: 0 2.2vw;
 
 					font-style: normal;
 					font-weight: bold;
-					font-size: 14px;
+					font-size: 1.55vh;
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
