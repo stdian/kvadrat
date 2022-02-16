@@ -4,28 +4,29 @@
 
 main {
 	.products-header-container {
-		width: 1240px;
-		min-height: 484px;
+		width: 100%;
 		margin: 0 auto;
-		padding: 0 60px;
+		padding: 0 4.83vw;
 		background: url("../img/products/products1bg.png");
+		background-size: cover;
 
 		h1 {
-			padding-top: 96px;
-			padding-bottom: 46px;
+			padding-top: 10.66vh;
+			padding-bottom: 5.11vh;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 60px;
+			font-size: 6.66vh;
 			line-height: 130%;
 			color: #FFFFFF;
 			text-transform: uppercase;
 		}
 
 		p {
-			width: 737px;
+			width: 59.43vw;
+			padding-bottom: 8.88vh;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 2.22vh;
 			line-height: 160%;
 			color: #FFFFFF;
 			text-transform: uppercase;
@@ -33,26 +34,26 @@ main {
 	}
 
 	.spheres-container {
-		width: 1240px;
-		min-height: 629px;
+		width: 100%;
 		margin: 0 auto;
-		padding: 0 60px;
+		padding: 0 4.83vw;
+		padding-bottom: 5.44vh;
 
 		h1 {
-			padding-top: 96px;
-			padding-bottom: 30px;
+			padding-top: 10.66vh;
+			padding-bottom: 3.33vh;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 48px;
+			font-size: 5.33vh;
 			line-height: 130%;
 			color: #000000;
 		}
 
 		.text {
-			width: 838px;
+			width: 67.58vw;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 18px;
+			font-size: 2vh;
 			line-height: 160%;
 			color: #000000;
 		}
@@ -60,24 +61,26 @@ main {
 		.items {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
-			margin-top: 68px;
+			margin-top: 7.55vh;
 
 			.item {
-				width: 256px;
-				min-height: 210px;
+				width: 20.64vw;
+				min-height: 23.33vh;
 				background: #F0F0F0;
 
 				img {
-					margin-top: 16px;
-					margin-left: 18px;
+					width: 10.5vh;
+					margin-top: 1.77vh;
+					margin-left: 1.45vw;
 				}
 
 				p {
-					padding-top: 53px;
-					padding-left: 23px;
+					padding-top: 5.88vh;
+					padding-bottom: 2.22vh;
+					padding-left: 1.85vw;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 20px;
+					font-size: 2.22vmin;
 					line-height: 130%;
 					color: #000000;
 				}
@@ -86,54 +89,58 @@ main {
 	}
 
 	.products-container {
-		width: 1240px;
-		min-height: 1570px;
+		width: 100%;
 		margin: 0 auto;
 
 		.products {
-			width: calc(100% - 120px);
+			width: calc(100% - 9.66vw);
 			margin: 0 auto;
-			margin-top: 45px;
+			margin-top: 5vh;
 			border-top: 1px solid #A4A4A4;
 
 			h2 {
-				padding-top: 81px;
+				padding-top: 9vh;
 				font-style: normal;
 				font-weight: bold;
-				font-size: 48px;
+				font-size: 5.33vh;
 				line-height: 130%;
 				color: #000000;
 			}
 
 			.text {
-				width: 838px;
+				width: 67.58vw;
 				padding-top: 26px;
 				font-style: normal;
 				font-weight: normal;
-				font-size: 18px;
+				font-size: 2vh;
 				line-height: 160%;
 				color: #000000;
 			}
 
 			.products-items {
-				margin-top: 70px;
+				margin-top: 7.77vh;
 			}
 
 			.show-more-container {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				margin-top: 63px;
+				margin-top: 7vh;
+				padding-bottom: 10.77vh;
 				cursor: pointer;
 				
 				p {
-					padding-left: 16px;
+					padding-left: 1.29vh;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 14px;
+					font-size: 1.55vh;
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
+				}
+
+				img {
+					height: 3.22vh;
 				}
 			}
 		}

@@ -31,6 +31,7 @@ header {
 					margin-right: 3.7vw;
 
 					img {
+						height: 3vh;
 						margin-right: .6vw;
 					}
 				}
@@ -120,7 +121,7 @@ header {
 						.logo-text-down {
 							font-style: normal;
 							font-weight: normal;
-							font-size: 12px;
+							font-size: 1.33vh;
 							line-height: 90%;
 							color: #000000;
 						}
@@ -169,6 +170,10 @@ header {
 				width: 20vw;
 				padding: 1.55vh 3.38vw 1.55vh 1.37vw; 
 				background: #2D2D2D;
+
+				img {
+					height: 1.33vh;
+				}
 				
 				.catalog-buton-text {
 					font-style: normal;

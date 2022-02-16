@@ -49,6 +49,10 @@ html, body {
 		min-height: 25.7vh;
 		background: #F2F2F2;
 
+		img {
+			width: 25.77vh;
+		}
+
 		.item-info {
 			display: flex;
 			flex-direction: column;
@@ -88,9 +92,8 @@ html, body {
 	display: flex;
 
 	img {
-		width: 5.16vw;
+		width: 7.1vh;
 		cursor: pointer;
-		
 	}
 
 	.slider-progress-container {
@@ -101,8 +104,8 @@ html, body {
 
 		.slider-progress-bar {
 			width: 8.38vw;
-			height: 4px;
-			margin: 0 12px;
+			height: .44vh;
+			margin: 0 1vw;
 			border: 0;
 		}
 

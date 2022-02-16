@@ -342,7 +342,8 @@ main {
 
 				.text1 {
 					grid-area: text1;
-					padding: 2.22vh 7.9vw 8.88vh 8.14vw;
+					padding-top: 2.22vh;
+					padding-left: 8.06vw;
 				}
 	
 				.line1 {
@@ -354,13 +355,15 @@ main {
 				}
 				
 				.text2 {
-					grid-area: text2; 
-					padding: 2.22vh 6.85vw 8.88vh 9.19vw;
+					grid-area: text2;
+					padding-top: 2.22vh;
+					padding-left: 8.06vw;
 				}
 				
 				.text3 {
 					grid-area: text3;
-					padding: 8.33vh 7.9vw 4.44vh 8.14vw;
+					padding-top: 8.33vh;
+					padding-left: 8.06vw;
 				}
 				
 				.line2 {
@@ -391,7 +394,8 @@ main {
 				
 				.text4 {
 					grid-area: text4;
-					padding: 8.33vh 6.85vw 4.44vh 9.19vw;
+					padding-top: 8.33vh;
+					padding-left: 8.06vw;
 				}
 	
 				#horizontal1, #horizontal2 {
@@ -421,7 +425,7 @@ main {
 				}
 	
 				.text {
-					width: 363px;
+					width: 29.27vw;
 					font-style: normal;
 					font-weight: normal;
 					font-size: 2vh;
