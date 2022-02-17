@@ -11,9 +11,18 @@ main {
 		.company {
 			display: flex;
 
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+			}
+
 			.left {
 				margin-top: 7vh;
 				padding: 0 4.83vw;
+
+				@media screen and (max-width: $mobile) {
+					margin-top: 9.6vh;
+					padding: 0 6.4vw;
+				}
 
 				h1 {
 					font-style: normal;
@@ -22,6 +31,10 @@ main {
 					line-height: 130%;
 					color: #000000;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						font-size: 7.2vh;
+					}
 				}
 
 				p {
@@ -32,11 +45,17 @@ main {
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						padding-top: 3.6vh;
+						padding-bottom: 7.2vh;
+						font-size: 2vh;
+					}
 				}
 			}
 
 			img {
-				width: 49vw;
+				width: 100%;
 			}
 		}
 	}
@@ -46,19 +65,40 @@ main {
 		margin: 0 auto;
 		padding-bottom: 12.11vh;
 
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 12.3vh;
+		}
+
 		.expert {
 			display: flex;
 			justify-content: space-between;
+
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+			}
 
 			img {
 				width: 38.45vw;
 				margin-top: 14.11vh;
 				margin-left: 5.73vw;
+
+				@media screen and (max-width: $mobile) {
+					width: auto;
+					margin-top: 11.4vh;
+					margin-left: 4.26vw;
+					margin-right: 4.26vw;
+				}
 			}
 
 			.right {
 				margin-top: 18.33vh;
 				margin-right: 9.27vw;
+
+				@media screen and (max-width: $mobile) {
+					margin-top: 1.8vh;
+					margin-right: 0;
+					padding: 0 6.4vw;
+				}
 
 				h1 {
 					padding-bottom: 3.11vh;
@@ -67,6 +107,11 @@ main {
 					font-size: 5.33vh;
 					line-height: 130%;
 					color: #000000;
+
+					@media screen and (max-width: $mobile) {
+						padding-bottom: 3.6vh;
+						font-size: 6vh;
+					}
 				}
 
 				p {
@@ -76,6 +121,11 @@ main {
 					font-size: 2vh;
 					line-height: 160%;
 					color: #000000;
+
+					@media screen and (max-width: $mobile) {
+						width: 100%;
+						font-size: 2.7vh;
+					}
 				}
 			}
 		}
@@ -98,15 +148,20 @@ main {
 
 		.swiper {
 			width: 100%;
-			height: 40vw;
+			height: 60.7vh;
 			margin-top: 6.77vh;
 	
 			.swiper-wrapper {
 				.swiper-slide {
 					position: relative;
-					width: 40vw;
-					height: 40vw;
+					width: 55vh;
+					height: 55vh;
 					background-size: cover;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						height: 60.7vh;
+					}
 
 					p {
 						position: absolute;
@@ -118,6 +173,12 @@ main {
 						font-size: 1.77vh;
 						line-height: 160%;
 						color: #FFFFFF;
+
+						@media screen and (max-width: $mobile) {
+							bottom: 3.9vh;
+							padding: 0 7.73vw;
+							font-size: 2.4vh;
+						}
 					}
 				}
 	
@@ -143,6 +204,11 @@ main {
 			justify-content: center;
 			margin-top: 3.55vh;
 			padding-bottom: 12vh;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 7.79vh;
+				padding-bottom: 11.84vh;
+			}
 			
 			.slider-progress-container {
 				#slider-progress-bar {
@@ -168,6 +234,12 @@ main {
 			font-size: 5.33vh;
 			line-height: 130%;
 			color: #000000;
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 9.5vh;
+				padding-bottom: 7.2vh;
+				font-size: 6vh;
+			}
 		}
 
 		.competence {
@@ -178,18 +250,35 @@ main {
 			padding: 0 4.83vw 14.22vh 4.83vw;
 			column-gap: 3.55vh;
 
+			@media screen and (max-width: $mobile) {
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 1.05vh;
+				margin-top: 1.05vh;
+				column-gap: 1.05vh;
+			}
+
 			.item {
 				position: relative;
-				min-width: 20.64vw;
-				min-height: 20.64vw;
+				min-width: 28vh;
+				min-height: 28vh;
 
 				background: #FFFFFF;
 				box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
+
+				@media screen and (max-width: $mobile) {
+					width: 42.6vw;
+					min-width: unset;
+					min-height: 31.48vh;
+				}
 
 				img {
 					width: 6.77vh;
 					margin-top: 2.55vh;
 					margin-left: 2vw;
+
+					@media screen and (max-width: $mobile) {
+						width: 7.5vh;
+					}
 				}
 
 				p {
@@ -203,6 +292,12 @@ main {
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						bottom: 1.5vh;
+						padding: 0 3.73vw;
+						font-size: 1.65vh;
+					}
 				}
 			}
 		}
