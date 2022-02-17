@@ -12,6 +12,10 @@ footer {
 			margin: 0 auto;
 			padding: 0 4.83vw;
 
+			@media screen and (max-width: $mobile) {
+				display: none;
+			}
+
 			.footer-menu {
 				width: 33%;
 				margin-top: 8.33vh;
@@ -50,6 +54,11 @@ footer {
 					font-size: 3.55vh;
 					line-height: 130%;
 					color: #FFFFFF;
+					text-decoration: none;
+
+					&:focus, &:visited {
+						color: #FFFFFF;
+					}
 				}
 			}
 
@@ -82,6 +91,93 @@ footer {
 					line-height: 160%;
 					color: #FFFFFF;
 					text-align: right;
+				}
+			}
+		}
+
+		.footer-mobile {
+			display: none;
+			padding: 9.6vh 6.4vw 13.5vh;
+
+			@media screen and (max-width: $mobile) {
+				display: block;
+			}
+
+			.center-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 7.2vh;
+				
+				.btn {
+					margin-bottom: 3.6vh;
+				}
+
+				.phone {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 4vh;
+					line-height: 130%;
+					color: #FFFFFF;
+					text-decoration: none;
+
+					&:focus, &:visited {
+						color: #FFFFFF;
+					}
+				}
+			}
+
+			.footer-menu {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 3.6vh;
+				width: 74vw;
+				list-style-type: none;
+
+				li {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 1.55vh;
+					line-height: 160%;
+					color: #FFFFFF;
+					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						font-size: 2vh;
+					}
+
+					a {
+						color: #FFFFFF;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.address-container {
+				display: flex;
+				flex-direction: column;
+				margin-top: 7.2vh;
+
+				.email {
+					padding-bottom: 4vh;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2.7vh;
+					line-height: 160%;
+					color: #FF0000;
+					text-decoration: none;
+
+					&:visited, &:focus {
+						color: #FF0000;
+					}
+				}
+
+				.address {
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2.7vh;
+					line-height: 160%;
+					color: #FFFFFF;
 				}
 			}
 		}
