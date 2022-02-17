@@ -45,6 +45,7 @@ const secondSwiper = new Swiper(".second-swiper", {
 			return `${current}/${total}`
 		},
 	},
+	// breakpoints: secondBreakpoints,
 })
 
 window.secondSliderGoNext = () => {
@@ -53,6 +54,15 @@ window.secondSliderGoNext = () => {
 
 window.secondSliderGoBack = () => {
 	secondSwiper.slidePrev()
+}
+
+const thirdBreakpoints = {
+	0: {
+		slidesPerView: 1,
+	},
+	601: {
+		slidesPerView: 3,
+	},
 }
 
 // eslint-disable-next-line no-undef
@@ -70,6 +80,7 @@ const thirdSwiper = new Swiper(".third-swiper", {
 			return `${current}/${total}`
 		},
 	},
+	breakpoints: thirdBreakpoints,
 })
 
 window.thirdSliderGoNext = () => {
@@ -79,3 +90,9 @@ window.thirdSliderGoNext = () => {
 window.thirdSliderGoBack = () => {
 	thirdSwiper.slidePrev()
 }
+
+const mobileContragentsSlider = new Swiper(".mobile-contragents-slider", {
+	loop: true,
+	slidesPerView: 2,
+	centeredSlides: true,
+})

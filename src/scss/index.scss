@@ -13,6 +13,10 @@ main {
 				background-image: url("../img/main/firstSlider/slide1.png");
 				background-size: cover;
 
+				@media screen and (max-width: $mobile) {
+					min-height: 100vh;
+				}
+
 				.slide-text {
 					padding-top: 16vh;
 					padding-left: 4.5vw;
@@ -24,6 +28,14 @@ main {
 					line-height: 130%;
 					color: #FFFFFF;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						max-width: 72vw;
+						padding-top: 16.94vh;
+						padding-left: 16.26vw;
+						padding-right: 0;
+						font-size: 4.8vh;
+					}
 				}
 
 				.slide-bottom-container {
@@ -32,6 +44,19 @@ main {
 					margin-top: 11vh;
 					padding: 0 4.84vw;
 					padding-bottom: 6.88vh;
+
+					@media screen and (max-width: $mobile) {
+						flex-direction: column;
+						align-items: center;
+						margin-top: 20vh;
+					}
+
+					.btn {
+						@media screen and (max-width: $mobile) {
+							width: 68vw;
+							margin-bottom: 6.89vh;
+						}
+					}
 				}
 
 				.slider-progress-bar {
@@ -65,21 +90,43 @@ main {
 		padding-top: 14vh;
 		padding-left: 5vw;
 
-		.block-title-number {
-			font-style: normal;
-			font-weight: 900;
-			font-size: 2vh;
-			line-height: 160%;
-			color: #FF0000;
+		@media screen and (max-width: $mobile) {
+			flex-direction: column;
+			align-items: start;
+			padding-top: 8.54vh;
+			padding-left: 6.4vw;
 		}
 
-		.block-title-hr {
-			width: 3.87vw;
-			height: 4px;
-			margin-left: .72vw;
-			margin-right: 2.4vw;
-			border: 0;
-			background-color: #FF0000;
+		.block-title-pagination {
+			display: flex;
+			align-items: center;
+
+			.block-title-number {
+				font-style: normal;
+				font-weight: 900;
+				font-size: 2vh;
+				line-height: 160%;
+				color: #FF0000;
+
+				@media screen and (max-width: $mobile) {
+					font-size: 2.7vh;
+				}
+			}
+
+			.block-title-hr {
+				width: 3.87vw;
+				height: 4px;
+				margin-left: .72vw;
+				margin-right: 2.4vw;
+				border: 0;
+				background-color: #FF0000;
+
+				@media screen and (max-width: $mobile) {
+					width: 12.8vw;
+					margin-left: 2.4vw;
+					margin-right: 0;
+				}
+			}
 		}
 
 		.block-title {
@@ -88,6 +135,10 @@ main {
 			font-size: 6.66vh;
 			line-height: 130%;
 			text-transform: uppercase;
+
+			@media screen and (max-width: $mobile) {
+				font-size: 6vh;
+			}
 		}
 	}
 
@@ -98,15 +149,27 @@ main {
 		background-position: 100% 0;
 		background-repeat: no-repeat;
 
+		@media screen and (max-width: $mobile) {
+			background-image: none;
+		}
+
 		.content-container {
 			display: flex;
 			justify-content: space-between;
 
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+			}
+
 			.left-container {
-				float: left;
 				margin-top: 5vh;
 				margin-bottom: 13vh;
 				margin-left: 13vw;
+
+				@media screen and (max-width: $mobile) {
+					margin-top: 4.64vh;
+					margin-left: 6.4vw;
+				}
 				
 				h2 {
 					width: 41vw;
@@ -116,15 +179,39 @@ main {
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						font-size: 2vh;
+					}
+				}
+
+				.mobile-img {
+					display: none;
+
+					@media screen and (max-width: $mobile) {
+						display: block;
+						width: 87.2vw;
+						margin-top: 5.5vh;
+					}
 				}
 	
 				.text-container {
 					display: flex;
 					align-items: flex-start;
 					margin-top: 4.66vh;
+
+					@media screen and (max-width: $mobile) {
+						flex-direction: column;
+						margin-top: 6.44vh;
+					}
 	
 					img {
 						margin-top: .55vh;
+
+						@media screen and (max-width: $mobile) {
+							margin-top: 0;
+						}
 					}
 	
 					.text-with-marker {
@@ -135,22 +222,30 @@ main {
 						font-size: 2vh;
 						line-height: 160%;
 						color: #000000;
+
+						@media screen and (max-width: $mobile) {
+							width: 87.2vw;
+							margin-left: 0;
+							padding-top: 3.44vh;
+						}
 					}
 				}
 	
 				button {
-					margin-top: 5.66vh;
-					margin-left: 7.82vw;
+					margin-top: 5.54vh;
 				}
 			}
 	
 			.right-container {
-				float: right;
 				margin-top: 4.22vh;
 				margin-right: 4.83vw;
 
 				img {
 					width: 38vw;
+				}
+
+				@media screen and (max-width: $mobile) {
+					display: none;
 				}
 			}
 		}
@@ -160,8 +255,6 @@ main {
 		background: #2A2A2A;
 
 		.block-title-container {
-			display: flex;
-			align-items: center;
 			padding-top: 11.55vh;
 	
 			.block-title {
@@ -171,15 +264,24 @@ main {
 
 		.second-swiper {
 			width: 100%;
-			height: 40vw;
+			height: 60.7vh;
 			margin-top: 6.77vh;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 6.44vh;
+			}
 	
 			.swiper-wrapper {
 				.swiper-slide {
 					position: relative;
-					width: 40vw;
-					height: 40vw;
+					width: 55vh;
+					height: 55vh;
 					background-size: cover;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						height: 60.7vh;
+					}
 
 					p {
 						position: absolute;
@@ -191,6 +293,12 @@ main {
 						font-size: 1.77vh;
 						line-height: 160%;
 						color: #FFFFFF;
+
+						@media screen and (max-width: $mobile) {
+							bottom: 3.9vh;
+							padding: 0 7.73vw;
+							font-size: 2.4vh;
+						}
 					}
 				}
 	
@@ -216,6 +324,11 @@ main {
 			justify-content: center;
 			margin-top: 3.55vh;
 			padding-bottom: 13.4vh;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 7.79vh;
+				padding-bottom: 8.4vh;
+			}
 			
 			.slider-progress-container {
 				#second-slider-progress-bar {
@@ -238,22 +351,46 @@ main {
 			margin-top: 5.55vh;
 			padding: 0 4.83vw;
 
+			@media screen and (max-width: $mobile) {
+				display: flex;
+				flex-direction: column;
+				margin-top: 5.09vh;
+				padding: 0 6.4vw;
+			}
+
 			.left {
 				width: 44vw;
 				background: #FF0000;
 				box-shadow: 0px 4px 40px rgba(0, 0, 0, .08);
 
+				@media screen and (max-width: $mobile) {
+					width: 87.2vw;
+				}
+
 				h4 {
-					padding: 45px;
+					padding: 5vh;
 					font-style: normal;
 					font-weight: bold;
 					font-size: 3.55vh;
 					line-height: 130%;
 					color: #FFFFFF;
+
+					@media screen and (max-width: $mobile) {
+						padding: 9vw;
+					}
 				}
 
-				img {
+				.img {
 					width: 44vw;
+					height: 32vh;
+					background-image: url("../img/main/competence/competence_image.png");
+					background-position: center;
+					background-size: cover;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						height: 41vh;
+					}
 				}
 			}
 	
@@ -263,6 +400,12 @@ main {
 				row-gap: 3.55vh;
 				column-gap: 3.55vh;
 
+				@media screen and (max-width: $mobile) {
+					row-gap: 1.05vh;
+					margin-top: 1.05vh;
+					column-gap: 1.05vh;
+				}
+
 				.item {
 					position: relative;
 					min-width: 28vh;
@@ -271,10 +414,20 @@ main {
 					background: #FFFFFF;
 					box-shadow: 0px 16px 80px rgba(0, 0, 0, .06);
 
+					@media screen and (max-width: $mobile) {
+						width: 42.6vw;
+						min-width: unset;
+						min-height: 31.48vh;
+					}
+
 					img {
 						width: 6.77vh;
 						margin-top: 2.55vh;
 						margin-left: 2vw;
+
+						@media screen and (max-width: $mobile) {
+							width: 7.5vh;
+						}
 					}
 
 					p {
@@ -288,6 +441,12 @@ main {
 						line-height: 160%;
 						color: #000000;
 						text-transform: uppercase;
+
+						@media screen and (max-width: $mobile) {
+							bottom: 1.5vh;
+							padding: 0 3.73vw;
+							font-size: 1.65vh;
+						}
 					}
 				}
 			}
@@ -299,6 +458,11 @@ main {
 			width: 100%;
 			margin-top: 9vh;
 			padding-bottom: 12.88vh;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 4.64vh;
+				padding-bottom: 14vh;
+			}
 		}
 	}
 
@@ -306,6 +470,11 @@ main {
 		.products-items {
 			margin-top: 7.6vh;
 			padding: 0 4.83vw;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 7.94vh;
+				padding: 0 6.4vw;
+			}
 		}
 
 		.btn-container {
@@ -314,6 +483,11 @@ main {
 			width: 100%;
 			padding-top: 9.22vh;
 			padding-bottom: 12.2vh;
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 8.84vh;
+				padding-bottom: 10.79vh;
+			}
 		}
 	}
 
@@ -322,6 +496,10 @@ main {
 		background: url("../img/main/advantages/abg.png");
 		background-size: cover;
 
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 4vh;
+		}
+
 		.block-title {
 			color: #FFFFFF;
 		}
@@ -329,6 +507,10 @@ main {
 		.advantages {
 			position: relative;
 			padding: 0 4.83vw;
+
+			@media screen and (max-width: $mobile) {
+				padding: 0 6.4vw;
+			}
 
 			.container {  
 				display: grid;
@@ -339,10 +521,30 @@ main {
 				gap: 0px 0px;
 				margin-top: 6.33vh;
 
+				@media screen and (max-width: $mobile) {
+					display: flex;
+					flex-direction: column;
+					margin-top: 6.14vh;
+				}
+
+				.flex-line {
+					display: none;
+					width: 87.2vw;
+					height: 4px;
+
+					@media screen and (max-width: $mobile) {
+						display: block;
+					}
+				}
+
 				.text1 {
 					grid-area: text1;
 					padding-top: 2.22vh;
 					padding-left: 8.06vw;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0;
+					}
 				}
 	
 				.line1 {
@@ -351,18 +553,32 @@ main {
 					grid-area: line1;
 					align-items: center;
 					justify-content: flex-start;
+
+					@media screen and (max-width: $mobile) {
+						display: none;
+					}
 				}
 				
 				.text2 {
 					grid-area: text2;
 					padding-top: 2.22vh;
 					padding-left: 8.06vw;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0;
+						padding-top: 6vh;
+					}
 				}
 				
 				.text3 {
 					grid-area: text3;
 					padding-top: 8.33vh;
 					padding-left: 8.06vw;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0;
+						padding-top: 6vh;
+					}
 				}
 				
 				.line2 {
@@ -370,10 +586,18 @@ main {
 					grid-area: line2;
 					align-items: center;
 					justify-content: flex-start;
+
+					@media screen and (max-width: $mobile) {
+						display: none;
+					}
 				}
 				
 				.dot {
 					grid-area: dot;
+
+					@media screen and (max-width: $mobile) {
+						display: none;
+					}
 				}
 				
 				.line3 {
@@ -381,6 +605,10 @@ main {
 					grid-area: line3;
 					align-items: center;
 					justify-content: flex-end;
+
+					@media screen and (max-width: $mobile) {
+						display: none;
+					}
 				}
 				
 				.line4 {
@@ -389,12 +617,21 @@ main {
 					grid-area: line4;
 					align-items: center;
 					justify-content: flex-end;
+
+					@media screen and (max-width: $mobile) {
+						display: none;
+					}
 				}
 				
 				.text4 {
 					grid-area: text4;
 					padding-top: 8.33vh;
 					padding-left: 8.06vw;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0;
+						padding-top: 6vh;
+					}
 				}
 	
 				#horizontal1, #horizontal2 {
@@ -421,6 +658,11 @@ main {
 					font-size: 2.77vh;
 					line-height: 130%;
 					color: #FFFFFF;
+
+					@media screen and (max-width: $mobile) {
+						padding-bottom: 2.84vh;
+						font-size: 3.7vh;
+					}
 				}
 	
 				.text {
@@ -430,6 +672,12 @@ main {
 					font-size: 2vh;
 					line-height: 160%;
 					color: #FFFFFF;
+
+					@media screen and (max-width: $mobile) {
+						width: 77vw;
+						padding-bottom: 6.59vh;
+						font-size: 2.39vh;
+					}
 				}
 			}
 		}
@@ -439,11 +687,21 @@ main {
 		padding-bottom: 14vh;
 		background: #F4F4F4;
 
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 12vh;
+		}
+
 		.first-line {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 6vh;
-			padding: 0 4.84vw 0 13vw;
+			padding: 0 4.83vw 0 13vw;
+
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+				margin-top: 4.8vh;
+				padding: 0 6.4vw;
+			}
 
 			.left {
 				p {
@@ -454,6 +712,11 @@ main {
 					line-height: 160%;
 					color: #000000;
 					text-transform: uppercase;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						font-size: 2vh;
+					}
 				}
 			}
 
@@ -462,6 +725,10 @@ main {
 				justify-content: space-between;
 				width: 43.87vw;
 				margin-top: 1vh;
+
+				@media screen and (max-width: $mobile) {
+					display: none;
+				}
 			}
 		}
 
@@ -470,6 +737,10 @@ main {
 			justify-content: space-between;
 			margin-top: 5.22vh;
 			padding: 0 4.83vw;
+
+			@media screen and (max-width: $mobile) {
+				display: none;
+			}
 
 			.left {
 				display: flex;
@@ -499,15 +770,61 @@ main {
 				}
 			}
 		}
+
+		.mobile-contragents-slider {
+			display: none;
+			margin-top: 7.2vh;
+
+			@media screen and (max-width: $mobile) {
+				display: block;
+			}
+		}
+
+		.lines-mobile {
+			display: none;
+			flex-direction: column;
+			align-items: flex-end;
+
+			margin-top: 8.4vh;
+			margin-right: 6.4vw;
+
+			@media screen and (max-width: $mobile) {
+				display: flex;
+			}
+
+			#line1 {
+				width: 12vw;
+				height: .9vh;
+				margin-bottom: 1.55vh;
+				border: 0;
+				background: #FF0000;
+			}
+
+			#line2 {
+				width: 23.2vw;
+				height: .9vh;
+				border: 0;
+				background: #FF0000;
+			}
+		}
 	}
 
 	.press-container {
 		padding-bottom: 13.22vh;
+
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 7.2vh;
+		}
+
 		.third-swiper {
 			overflow-x: hidden;
 			width: calc(100% - 9.66vw);
 			margin: 0 auto;
 			margin-top: 7.33vh;
+
+			@media screen and (max-width: $mobile) {
+				width: 87.2vw;
+			}
 			
 			.swiper-wrapper {
 				a {
@@ -517,6 +834,11 @@ main {
 						position: relative;
 						width: 28.38vw;
 						min-height: 45vh;
+
+						@media screen and (max-width: $mobile) {
+							width: 87.2vw;
+							min-height: 61vh;
+						}
 					}
 				}
 				
@@ -526,6 +848,10 @@ main {
 		.third-slider-pagination-container {
 			justify-content: center;
 			margin-top: 6.66vh;
+
+			@media screen and (max-width: $mobile) {
+				margin-top: 7.19evh;
+			}
 			
 			.slider-progress-container {
 				#third-slider-progress-bar {
