@@ -18,8 +18,16 @@ main {
 		width: 100%;
 		background: #FFFFFF;
 
+		@media screen and (max-width: $mobile) {
+			flex-direction: column;
+		}
+
 		.left {
 			padding: 0 4.83vw;
+
+			@media screen and (max-width: $mobile) {
+				padding: 0 6.4vw;
+			}
 
 			h1 {
 				padding-top: 10.33vh;
@@ -29,6 +37,12 @@ main {
 				line-height: 130%;
 				color: #000000;
 				text-transform: uppercase;
+
+				@media screen and (max-width: $mobile) {
+					padding-top: 9.6vh;
+					padding-bottom: 7.2vh;
+					font-size: 7.2vh;
+				}
 			}
 
 			p {
@@ -39,10 +53,16 @@ main {
 				line-height: 160%;
 				color: #000000;
 				text-transform: uppercase;
+
+				@media screen and (max-width: $mobile) {
+					display: none;
+				}
 			}
 		}
 
-		
+		img {
+			width: 100%;
+		}
 	}
 
 	.contragents-container {
@@ -51,5 +71,29 @@ main {
 		row-gap: 5.33vh;
 		padding: 12.22vh 4.83vw 14.4vh;	
 		column-gap: 2.58vw;
+
+		@media screen and (max-width: $mobile) {
+			grid-template-columns: repeat(2, 41.6vw);
+			row-gap: 4.8vh;
+			justify-content: space-between;
+			padding: 8.4vh 6.4vw 18vh;
+			column-gap: unset;
+		}
+
+		@media screen and (max-width: $mobile) {
+			.contragent {
+				width: 41.6vw;
+			}
+
+			.contragent-image {
+				width: 41.6vw;
+				height: 41.6vw;
+			}
+
+			.contragent-name {
+				padding-top: 1.8vh;
+				font-size: 2vh;
+			}
+		}
 	}
 }
