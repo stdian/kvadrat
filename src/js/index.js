@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import "../index.html"
 import "../scss/index.scss"
 
-// eslint-disable-next-line no-undef
 const swiper = new Swiper(".first-swiper", {
 	// Optional parameters
 	loop: true,
@@ -20,7 +21,6 @@ window.firstSliderGoBack = () => {
 	swiper.slidePrev()
 }
 
-// eslint-disable-next-line no-undef
 const secondSwiper = new Swiper(".second-swiper", {
 	loop: true,
 	effect: "coverflow",
@@ -29,11 +29,11 @@ const secondSwiper = new Swiper(".second-swiper", {
 	slidesPerView: "auto",
 	parallax: true,
 	coverflowEffect: {
-		rotate: 0, // Slide rotate in degrees
-		stretch: 100, // Stretch space between slides (in px)
-		depth: 300, // Depth offset in px (slides translate in Z axis)
-		modifier: 1, // Effect multipler
-		slideShadows: true, // Enables slides shadows
+		rotate: 0,
+		stretch: 100,
+		depth: 300,
+		modifier: 1,
+		slideShadows: true,
 	},
 	pagination: {
 		el: ".second-slider-progress-text",
@@ -45,7 +45,6 @@ const secondSwiper = new Swiper(".second-swiper", {
 			return `${current}/${total}`
 		},
 	},
-	// breakpoints: secondBreakpoints,
 })
 
 window.secondSliderGoNext = () => {
@@ -65,9 +64,7 @@ const thirdBreakpoints = {
 	},
 }
 
-// eslint-disable-next-line no-undef
 const thirdSwiper = new Swiper(".third-swiper", {
-	// Optional parameters
 	loop: false,
 	slidesPerView: 3,
 	pagination: {

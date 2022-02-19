@@ -10,11 +10,11 @@ const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
 	parallax: true,
 	coverflowEffect: {
-		rotate: 0, // Slide rotate in degrees
-		stretch: 100, // Stretch space between slides (in px)
-		depth: 300, // Depth offset in px (slides translate in Z axis)
-		modifier: 1, // Effect multipler
-		slideShadows: true, // Enables slides shadows
+		rotate: 0,
+		stretch: 100,
+		depth: 300,
+		modifier: 1,
+		slideShadows: true,
 	},
 	pagination: {
 		el: ".slider-progress-text",

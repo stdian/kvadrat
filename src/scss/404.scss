@@ -11,9 +11,13 @@ main {
 		margin: 0 auto;
 		padding: 8.11vh 4.83vw 11.33vh;
 
-		.left {
-			float: left;
+		@media screen and (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: 5.4vh;
+			padding: 9vh 6.4vw 14.4vh;
+		}
 
+		.left {
 			h2 {
 				padding-bottom: 2.66vh;
 				font-style: normal;
@@ -21,15 +25,26 @@ main {
 				font-size: 4.44vh;
 				line-height: 130%;
 				color: #000000;
+
+				@media screen and (max-width: $mobile) {
+					padding-bottom: 4.5vh;
+					font-size: 6vh;
+				}
 			}
 
 			p {
+				width: 29.27vw;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 2vh;
 				line-height: 160%;
 				color: #000000;
 				white-space: pre-line;
+
+				@media screen and (max-width: $mobile) {
+					width: 76.5vw;
+					font-size: 2.7vh;
+				}
 
 				a {
 					color: #FF0000;
@@ -45,6 +60,10 @@ main {
 		.right {
 			img {
 				width: 48.46vw;
+
+				@media screen and (max-width: $mobile) {
+					width: 100%;
+				}
 			}
 		}
 	}
