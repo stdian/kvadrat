@@ -8,7 +8,7 @@ main {
 
 	.first-swiper {
 		.swiper-wrapper {
-			#first-slider-slide-1 {
+			.swiper-slide {
 				min-height: 60vh;
 				background-image: url("../img/main/firstSlider/slide1.png");
 				background-size: cover;
@@ -59,28 +59,28 @@ main {
 					}
 				}
 
-				.slider-progress-bar {
-					background: linear-gradient(to right, #FF0000 25%, #FFFFFF 25%, #FFFFFF 75%);
-				}
+				// .slider-progress-bar {
+				// 	background: linear-gradient(to right, #FF0000 25%, #FFFFFF 25%, #FFFFFF 75%);
+				// }
 			}
 
-			#first-slider-slide-2 {
-				.slider-progress-bar {
-					background: linear-gradient(to right, #FF0000 50%, #FFFFFF 50%, #FFFFFF 75%);
-				}
-			}
+			// #first-slider-slide-2 {
+			// 	.slider-progress-bar {
+			// 		background: linear-gradient(to right, #FF0000 50%, #FFFFFF 50%, #FFFFFF 75%);
+			// 	}
+			// }
 
-			#first-slider-slide-3 {
-				.slider-progress-bar {
-					background: linear-gradient(to right, #FF0000 75%, #FFFFFF 75%, #FFFFFF 75%);
-				}
-			}
+			// #first-slider-slide-3 {
+			// 	.slider-progress-bar {
+			// 		background: linear-gradient(to right, #FF0000 75%, #FFFFFF 75%, #FFFFFF 75%);
+			// 	}
+			// }
 
-			#first-slider-slide-4 {
-				.slider-progress-bar {
-					background: #FF0000;
-				}
-			}
+			// #first-slider-slide-4 {
+			// 	.slider-progress-bar {
+			// 		background: #FF0000;
+			// 	}
+			// }
 		}
 	}
 

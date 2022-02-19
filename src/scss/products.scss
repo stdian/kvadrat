@@ -28,7 +28,7 @@ main {
 			@media screen and (max-width: $mobile) {
 				padding-top: 9.6vh;
 				padding-bottom: 3.6vh;
-				font-size: 7.2vh;
+				font-size: 7vh;
 			}
 		}
 
@@ -91,9 +91,14 @@ main {
 
 		.items {
 			display: grid;
-			grid-template-columns: repeat(1, 1fr);
+			grid-template-columns: repeat(4, 20.64vw);
 			row-gap: 6.4vw;
+			justify-content: space-between;
 			margin-top: 7.55vh;
+
+			@media screen and (max-width: $mobile) {
+				grid-template-columns: repeat(1, 87.2vw);
+			}
 
 			.item {
 				width: 20.64vw;

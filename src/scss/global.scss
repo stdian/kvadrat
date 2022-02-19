@@ -164,6 +164,7 @@ html, body {
 			font-size: 1.55vh;
 			line-height: 160%;
 			color: #FFFFFF;
+			text-align: center;
 
 			@media screen and (max-width: $mobile) {
 				padding-bottom: 1.2vh;
@@ -182,7 +183,7 @@ html, body {
 .press-article {
 	position: relative;
 	width: 28.38vw;
-	min-height: 45vh;
+	min-height: 48vh;
 	border-bottom: 1px solid #D2D2D2;
 
 	@media screen and (max-width: $mobile) {

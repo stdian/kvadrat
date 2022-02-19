@@ -11,6 +11,20 @@ const swiper = new Swiper(".first-swiper", {
 		nextEl: ".slider-go-next",
 		prevEl: ".slider-go-back",
 	},
+	pagination: {
+		el: ".slider-progress-text",
+		type: "custom",
+		clickable: true,
+		// eslint-disable-next-line object-shorthand
+		renderCustom: function(_swiper, current, total) {
+			const slides = document.getElementsByClassName(`first-slider-progress-bar-${current}`)
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].style.background = `linear-gradient(to right, #FF0000 ${(current / total) * 100}%, #FFFFFF ${(current / total) * 100}%, #FFFFFF 100%)`
+			}
+			// document.getElementById(`first-slider-progress-bar-${current}`).style.background = `linear-gradient(to right, #FF0000 ${(current / total) * 100}%, #FFFFFF ${(current / total) * 100}%, #FFFFFF 100%)`
+			// return `${current}/${total}`
+		},
+	},
 })
 
 window.firstSliderGoNext = () => {
