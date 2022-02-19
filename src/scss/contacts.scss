@@ -23,6 +23,12 @@ main {
 			line-height: 130%;
 			color: #000000;
 			text-transform: uppercase;
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 9.6vh;
+				padding-left: 6.4vw;
+				font-size: 7.2vh;
+			}
 		}
 
 		.contacts-data {
@@ -31,12 +37,23 @@ main {
 			margin-top: 7.11vh;
 			padding: 0 4.83vw;
 
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+				row-gap: 7.65vh;
+				margin-top: 7.2vh;
+				padding: 0 6.4vw;
+			}
+
 			.contact-item {
 				display: flex;
 				align-items: center;
 
 				img {
 					margin-right: 1.29vw;
+
+					@media screen and (max-width: $mobile) {
+						margin-right: 4.26vw;
+					}
 				}
 
 				a, p {
@@ -56,6 +73,10 @@ main {
 			#contact-address {
 				p {
 					max-width: 25vw;
+
+					@media screen and (max-width: $mobile) {
+						max-width: 100%;
+					}
 				}
 			}
 		}
@@ -66,10 +87,21 @@ main {
 			min-height: 77.33vh;
 			margin-top: 4.44vh;
 
+			@media screen and (max-width: $mobile) {
+				flex-direction: column;
+				min-height: unset;
+				margin-top: 9.6vh;
+			}
+
 			#map {
 				width: 66.77vw;
 				height: 100%;
 				min-height: 77.33vh;
+
+				@media screen and (max-width: $mobile) {
+					width: 100%;
+					min-height: 66vh;
+				}
 			}
 
 			form {
@@ -78,13 +110,23 @@ main {
 				min-height: 77.33vh;
 				background: #FFFFFF;
 
+				@media screen and (max-width: $mobile) {
+					width: 100%;
+					min-height: 104.3vh;
+				}
+
 				h5 {
 					padding: 6.22vh 2.98vw 3.55vh;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 25px;
+					font-size: 2.77vh;
 					line-height: 130%;
 					color: #000000;
+
+					@media screen and (max-width: $mobile) {
+						padding: 8.4vh 6.4vw 4.8vh;
+						font-size: 3.75vh;
+					}
 				}
 
 				.input-container {
@@ -93,6 +135,13 @@ main {
 					padding-bottom: .88vh;
 					border-bottom: 1px solid #D2D2D2;
 
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						margin: 0 auto;
+						margin-bottom: 3.6vh;
+						padding-bottom: 1.2vh;
+					}
+
 					input {
 						font-style: normal;
 						font-weight: normal;
@@ -100,6 +149,10 @@ main {
 						line-height: 160%;
 						border: 0;
 						color: #000000;
+
+						@media screen and (max-width: $mobile) {
+							font-size: 2.4vh;
+						}
 
 						&:focus {
 							outline: none;
@@ -114,14 +167,20 @@ main {
 					font-size: 1.77vh;
 					line-height: 160%;
 					color: #000000;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0 6.4vw;
+						font-size: 2.4vh;
+					}
 				}
 
 				textarea {
 					width: 25.8vw;
 					height: 18.88vh;
-					margin: .88vh 4.83vw 2.66vh 2.58vw;
+					margin: .88vh 0 2.66vh 2.58vw;
 					padding: .33vh .4vw;
 					border: 1px solid #D2D2D2;
+					border-radius: 0;
 
 					font-style: normal;
 					font-weight: normal;
@@ -129,6 +188,14 @@ main {
 					line-height: 160%;
 					color: #000000;
 					resize: none;
+
+					@media screen and (max-width: $mobile) {
+						width: 87.2vw;
+						height: 25.49vh;
+						margin: 1.2vh 0 3.6vh 6.4vw;
+						padding: 1vh 2vw;
+						font-size: 2.4vh;
+					}
 
 					&:focus {
 						outline: none;
@@ -142,6 +209,11 @@ main {
 					font-size: 1.55vh;
 					line-height: 160%;
 					color: #737373;
+
+					@media screen and (max-width: $mobile) {
+						padding: 0 6.4vw;
+						font-size: 2vh;
+					}
 				}
 
 				button {
@@ -160,6 +232,11 @@ main {
 					color: #FFFFFF;
 					text-transform: uppercase;
 					cursor: pointer;
+
+					@media screen and (max-width: $mobile) {
+						min-height: 9.6vh;
+						font-size: 3vh;
+					}
 				}
 			}
 		}
