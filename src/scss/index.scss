@@ -7,8 +7,37 @@ main {
 	margin: 0 auto;
 
 	.first-swiper {
+		.first-swiper-pagination {
+			position: absolute;
+			bottom: 0;
+			z-index: 100;
+			width: 100%;
+
+			.slide-bottom-container {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 11vh;
+				padding: 0 4.84vw;
+				padding-bottom: 6.88vh;
+
+				@media screen and (max-width: $mobile) {
+					flex-direction: column;
+					align-items: center;
+					margin-top: 20vh;
+				}
+
+				.btn {
+					@media screen and (max-width: $mobile) {
+						width: 68vw;
+						margin-bottom: 6.89vh;
+					}
+				}
+			}
+		}
+
 		.swiper-wrapper {
 			.swiper-slide {
+				height: auto;
 				min-height: 60vh;
 				background-image: url("../img/main/firstSlider/slide1.png");
 				background-size: cover;
@@ -19,6 +48,7 @@ main {
 
 				.slide-text {
 					padding-top: 16vh;
+					padding-bottom: 16vh;
 					padding-left: 4.5vw;
 					padding-right: 4.5vw;
 
@@ -32,55 +62,13 @@ main {
 					@media screen and (max-width: $mobile) {
 						max-width: 72vw;
 						padding-top: 16.94vh;
+						padding-bottom: 16.94vh;
 						padding-left: 16.26vw;
 						padding-right: 0;
 						font-size: 4.8vh;
 					}
 				}
-
-				.slide-bottom-container {
-					display: flex;
-					justify-content: space-between;
-					margin-top: 11vh;
-					padding: 0 4.84vw;
-					padding-bottom: 6.88vh;
-
-					@media screen and (max-width: $mobile) {
-						flex-direction: column;
-						align-items: center;
-						margin-top: 20vh;
-					}
-
-					.btn {
-						@media screen and (max-width: $mobile) {
-							width: 68vw;
-							margin-bottom: 6.89vh;
-						}
-					}
-				}
-
-				// .slider-progress-bar {
-				// 	background: linear-gradient(to right, #FF0000 25%, #FFFFFF 25%, #FFFFFF 75%);
-				// }
 			}
-
-			// #first-slider-slide-2 {
-			// 	.slider-progress-bar {
-			// 		background: linear-gradient(to right, #FF0000 50%, #FFFFFF 50%, #FFFFFF 75%);
-			// 	}
-			// }
-
-			// #first-slider-slide-3 {
-			// 	.slider-progress-bar {
-			// 		background: linear-gradient(to right, #FF0000 75%, #FFFFFF 75%, #FFFFFF 75%);
-			// 	}
-			// }
-
-			// #first-slider-slide-4 {
-			// 	.slider-progress-bar {
-			// 		background: #FF0000;
-			// 	}
-			// }
 		}
 	}
 
