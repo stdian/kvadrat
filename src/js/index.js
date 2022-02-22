@@ -103,3 +103,23 @@ const mobileContragentsSlider = new Swiper(".mobile-contragents-slider", {
 	slidesPerView: 2,
 	centeredSlides: true,
 })
+
+window.competenceShowMore = () => {
+	const items = document.querySelectorAll(".competence-hidden")
+	for (let i = 0; i < items.length; i += 1) {
+		items[i].style.display = "block"
+	}
+
+	const button = document.querySelector(".competence-container").querySelector(".btn-container")
+	button.style.display = "none"
+}
+
+window.productsShowMore = () => {
+	const items = document.querySelectorAll(".products-hidden")
+	for (let i = 0; i < items.length; i += 1) {
+		items[i].style.display = "flex"
+	}
+
+	const button = document.querySelector(".products-container").querySelector(".btn-container")
+	button.style.display = "none"
+}

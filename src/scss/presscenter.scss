@@ -7,9 +7,11 @@ main {
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 4.83vw;
+		padding-bottom: 14.44vh;
 
 		@media screen and (max-width: $mobile) {
 			padding: 0 6.4vw;
+			padding-bottom: 18vh;
 		}
 
 		.press-header {
@@ -45,11 +47,9 @@ main {
 			display: flex;
 			justify-content: center;
 			margin-top: 9.66vh;
-			margin-bottom: 14.44vh;
 
 			@media screen and (max-width: $mobile) {
 				margin-top: 8.4vh;
-				margin-bottom: 18vh;
 			}
 		}
 	}

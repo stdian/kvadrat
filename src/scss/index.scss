@@ -331,6 +331,7 @@ main {
 	}
 
 	.competence-container {
+		padding-bottom: 12.88vh;
 		background: #F4F4F4;
 
 		.competence {
@@ -394,6 +395,10 @@ main {
 					column-gap: 1.05vh;
 				}
 
+				.competence-hidden {
+					display: none;
+				}
+
 				.item {
 					position: relative;
 					min-width: 28vh;
@@ -445,7 +450,6 @@ main {
 			justify-content: center;
 			width: 100%;
 			margin-top: 9vh;
-			padding-bottom: 12.88vh;
 
 			@media screen and (max-width: $mobile) {
 				margin-top: 4.64vh;
@@ -455,6 +459,12 @@ main {
 	}
 
 	.products-container {
+		padding-bottom: 12.2vh;
+
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 10.79vh;
+		}
+
 		.products-items {
 			margin-top: 7.6vh;
 			padding: 0 4.83vw;
@@ -469,12 +479,10 @@ main {
 			display: flex;
 			justify-content: center;
 			width: 100%;
-			padding-top: 9.22vh;
-			padding-bottom: 12.2vh;
+			margin-top: 9.22vh;
 
 			@media screen and (max-width: $mobile) {
-				padding-top: 8.84vh;
-				padding-bottom: 10.79vh;
+				margin-top: 8.84vh;
 			}
 		}
 	}

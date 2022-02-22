@@ -147,6 +147,7 @@ main {
 	.products-container {
 		width: 100%;
 		margin: 0 auto;
+		padding-bottom: 10.77vh;
 
 		.products {
 			width: calc(100% - 9.66vw);
@@ -175,7 +176,7 @@ main {
 
 			.text {
 				width: 67.58vw;
-				padding-top: 26px;
+				padding-top: 2.88vh;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 2vh;
@@ -201,7 +202,6 @@ main {
 				align-items: center;
 				justify-content: center;
 				margin-top: 7vh;
-				padding-bottom: 10.77vh;
 				cursor: pointer;
 
 				@media screen and (max-width: $mobile) {

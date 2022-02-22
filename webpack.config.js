@@ -102,6 +102,23 @@ const plugins = () => {
 				collapseWhitespace: isProd,
 			},
 		}),
+
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, "src/article1.html"),
+			filename: "article1.html",
+			chunks: ["article", "mobile"],
+			minify: {
+				collapseWhitespace: isProd,
+			},
+		}),
+		new HTMLWebpackPlugin({
+			template: path.resolve(__dirname, "src/article2.html"),
+			filename: "article2.html",
+			chunks: ["article", "mobile"],
+			minify: {
+				collapseWhitespace: isProd,
+			},
+		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
 			filename: `./css/${filename("css")}`,
@@ -215,7 +232,7 @@ module.exports = {
 				test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
 				type: "asset/resource",
 				generator: {
-					filename: `./img/${filename("[ext]")}`,
+					filename: `[path]${filename("[ext]")}`,
 				},
 			},
 			{

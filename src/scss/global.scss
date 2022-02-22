@@ -53,7 +53,7 @@ html, body {
 	@media screen and (max-width: $mobile) {
 		grid-template-columns: repeat(1, 1fr);
 		row-gap: 3.6vh;
-	}
+	}	
 
 	.item {
 		position: relative;
@@ -124,6 +124,10 @@ html, body {
 			}
 		}
 	}
+
+	.products-hidden {
+		display: none;
+	}
 }
 
 .slide-pagination-container {
@@ -177,6 +181,10 @@ html, body {
 .press-articles {
 	a {
 		text-decoration: none;
+	}
+
+	.press-hidden {
+		display: none;
 	}
 }
 
