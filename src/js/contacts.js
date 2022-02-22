@@ -2,7 +2,6 @@
 /* eslint-disable no-undef */
 import "../contacts.html"
 import "../scss/contacts.scss"
-import "../img/contacts/placemark.svg"
 
 ymaps.ready(init)
 function init() {
